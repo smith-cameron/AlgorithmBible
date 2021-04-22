@@ -55,8 +55,19 @@ function beCheerful(){
 
 //Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print " Dojo".
 function ninjaCounting(){
-    
+    for(var i = 1; i <= 100; i++){
+        if(i % 10 == 0){
+            console.log("Coding Dojo");
+        }
+        else if(i % 5 == 0){
+            console.log("Coding");
+        }
+        else{
+            console.log(i);
+        }
+    }
 }
+//ninjaCounting();
 
 //Using FOR, print multiples of 3 from -300 to 0. Skip -3 and -6.
 function multiplesOf3(){
@@ -69,6 +80,13 @@ function multiplesOf3(){
 }
 //multiplesOf3();
 
+//Your function will be given an input parameter incoming. Please console.log this value.
+function printParameter(input){
+    console.log(input);
+}
+var someThing = "Hello World";
+//printParameter(someThing);
+
 //Print integers from 2000 to 5280, using a WHILE.
 function printWhile(){
     var num = 2000
@@ -79,6 +97,18 @@ function printWhile(){
 }
 //printWhile();
 
+//Add odd integers from -300,000 to 300,000, and console.log the final sum. Is there a shortcut?
+function largeNum(){
+    var i = 1;
+    var sum = 0;
+    while(i <= 299999){
+        sum += i;
+        i += 2;
+    }
+    console.log(sum*2);
+}
+largeNum();
+
 //If 2 given numbers represent your birth month and day in either order, log "How did you know?", else log "Just another day...."
 function specialDay(num1, num2){
     if(num1 == 12 || num1 == 21 && num2 == 12 || num2 == 21){
@@ -88,3 +118,8 @@ function specialDay(num1, num2){
     }
 }
 //specialDay(21, 10);
+
+//Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop.
+function fourDown(){
+    
+}
