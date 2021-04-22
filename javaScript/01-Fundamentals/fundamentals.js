@@ -107,7 +107,7 @@ function largeNum(){
     }
     console.log(sum*2);
 }
-largeNum();
+//largeNum();
 
 //If 2 given numbers represent your birth month and day in either order, log "How did you know?", else log "Just another day...."
 function specialDay(num1, num2){
@@ -121,5 +121,98 @@ function specialDay(num1, num2){
 
 //Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop.
 function fourDown(){
-    
+    var i = 2016;
+    while(i > 0){
+        console.log(i);
+        i -= 4;
+    }
 }
+//fourDown();
+
+//Based on earlier fourDown(), given lowNum, highNum, mult, print multiples of mult from highNum down to lowNum, using a FOR. For (2,9,3), print 9 6 3 (on successive lines).
+function flexibleCountdown(max, min, mult){
+    for(var i = max; i > min; i -= mult){
+        console.log(i);
+    }
+}
+//flexibleCountdown(9,2,3);
+
+//Write a function that determines whether a given year is a leap year. If a year is divisible by four, it is a leap year, unless it is divisible by 100. However, if it is divisible by 400, then it is.
+function leapyear(input){
+    if(input % 4 ==0){
+        if(input % 100 == 0){
+            if(input % 400 == 0){
+                console.log("Special Leap Year.")
+            }else{
+                console.log("Not a Leap Year.")
+            }
+        }else{
+            console.log("Leap Year.")
+        }
+    }else{
+        console.log("Not a Leap Year.")
+    }
+}
+var year = 2000;
+//leapyear(year);
+
+//This is based on “Flexible Countdown”. The parameter names are not as helpful, but the problem is essentially identical; don’t be thrown off! Given 4 parameters (param1,param2,param3,param4), print the multiples of param1, starting at param2 and extending to param3. One exception: if a multiple is equal to param4, then skip (don’t print) it. Do this using a WHILE. Given (3,5,17,9), print 6,12,15 (which are all of the multiples of 3 between 5 and 17, and excluding the value 9).
+function finalCountdown(mult, from, to, except){
+    var i = from;
+    while(i <= to){
+        if(i % mult == 0){
+            if(i == except){
+                i ++;
+                continue
+            }
+            console.log(i);
+        }
+        i ++;
+    }
+}
+//finalCountdown(3,5,17,9);
+
+//Create a function that accepts a number as an input. Return a new array that counts down by one, from the number (as array’s ‘zeroth’ element) down to 0 (as the last element). How long is this array?
+function arrayCountdown(input){
+    var newArray = [];
+    for(var i = input; i >= 0; i--){
+        newArray.push(i);
+    }
+    console.log("My Array is "+newArray.length+" indices long.");
+    return newArray;
+}
+var digets = 4;
+//console.log(arrayCountdown(digets));
+
+//Your function will receive an array with two numbers. Print the first value, and return the second.
+function printAndReturn(input){
+    console.log("Printing: "+input[0]);
+    return input[1];
+}
+var arrayOfTwo = [32, 44];
+//console.log("Returning: "+printAndReturn(arrayOfTwo));
+
+//Given an array, return the sum of the first value in the array, plus the array’s length. What happens if the array’s first value is not a number, but a string (like "what?") or a boolean (like false).
+//A string of a number "32" or a word "what?" appended the length. return was 322 for ["32", 44] and what?2 for ["what?", 44]
+//A boolean value [false, 44] returned only the length. [false, 44] returned the length plus one as 3.
+function firstPlusLength(input){
+    return input[0]+input.length;
+}
+var firstPLArray = [true, 44];
+//console.log(firstPlusLength(firstPLArray));
+
+//For [1,3,5,7,9,13], print values that are greater than its 2nd value. Return how many values this is.
+function greaterThan(input, minIndex){
+    var sum = 0;
+    for(var i = 0; i < input.length; i++){
+        if(input[i] > input[minIndex]){
+            console.log(input[i]);
+            sum += 1;
+        }
+    }
+    return sum;
+}
+var index = 2;
+var greaterThanArray = [1,3,5,7,9,13];
+//console.log("Total values greater than "+greaterThanArray[index]+" : "+greaterThan(greaterThanArray, index));
+
