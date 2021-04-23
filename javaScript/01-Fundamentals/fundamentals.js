@@ -212,7 +212,39 @@ function greaterThan(input, minIndex){
     }
     return sum;
 }
-var index = 2;
+var index = 1;
 var greaterThanArray = [1,3,5,7,9,13];
 //console.log("Total values greater than "+greaterThanArray[index]+" : "+greaterThan(greaterThanArray, index));
+
+//Write a function that accepts any array, and returns a new array with the array values that are greater than its 2nd value. Print how many values this is. What will you do if the array is only one element long?
+function greaterThan2(input, index){
+    if(input.length <=1){
+        return "need more values than one.";
+    }
+    var sum = 0;
+    for(var i = 0; i < input.length; i++){
+        if(input[i] > input[index]){
+            console.log(input[i]);
+            sum += 1;
+        }
+    }
+    return sum;
+}
+//console.log("Total values greater than "+greaterThanArray[index]+" : "+greaterThan2(greaterThanArray, index));
+
+//Given two numbers, return array of length num1 with each value num2. Print "Jinx!" if they are same.
+function thisAndThat(num1, num2){
+    if(num1 == num2){
+        return "Jinx!";
+    }
+    var newArray = [];
+    for(var i = 0; i <= num1; i++){
+        newArray.push(num2);
+    }
+    return newArray;
+}
+var that = 5;
+var that2 = 5;
+//console.log(thisAndThat(that, that2));
+
 
