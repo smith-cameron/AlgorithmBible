@@ -401,16 +401,67 @@ var endPosArray = [-1,1,1,1];
 
 //Create a function that accepts an array, and prints "yummy" each time one of the values is equal to "food". If no array elements are "food", then print "I'm hungry" once.
 function alwaysHungry(arr){
-    var sum = 0;
+    var food = 0;
     for(var i = 0; i < arr.length; i++){
         if(arr[i] == "food"){
             console.log("yummy");
-            sum += 1;
+            food += 1;
         }
     }
-    if(sum == 0){
+    if(food == 0){
         console.log("I'm hungry");
     }
 }
 var hungryArray = ["word", false, "food", 34, "no", "blah"];
 //alwaysHungry(hungryArray);
+
+//Create a function that accepts an array. Every time that array has three odd values in a row, print "That’s odd!" Every time the array has three evens in a row, print "Even more so!"
+function evenAndOdds(arr){
+    for(var i = 0; i < arr.length-2; i++){
+        if(arr[i] % 2 != 0 && arr[i+1] % 2 != 0 && arr[i+2] % 2 != 0){
+            console.log("That’s odd!");
+        }
+        else if(arr[i] % 2 == 0 && arr[i+1] % 2 == 0 && arr[i+2] % 2 == 0){
+            console.log("Even more so!");
+        }
+    }
+}
+var eAndoddsArray = [1,3,5,4,5,6,7,8,9,2];
+//evenAndOdds(eAndoddsArray);
+
+//Given array, swap first and last, third and third-to- last, etc. Input[true,42,"Ada",2,"pizza"] becomes ["pizza",42,"Ada",2,true]. Change [1,2,3,4,5,6] to [6,2,4,3,5,1].
+function swapInwards(arr){
+    for(var i = 0; i < arr.length/2; i+=2){
+        var temp = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
+    }
+    return arr;
+}
+var swapInArray = [1,2,3,4,5,6];
+//console.log(swapInwards(swapInArray));
+
+//Given arr, add 1 to odd elements ([1], [3], etc.), console.log all values and return arr.
+function incrementTheSeconds(arr){
+    for(var i = 0; i < arr.length; i++){
+        if(arr[i] % 2 != 0){
+            arr[i] += 1;
+            console.log(arr[i]);
+        }
+        console.log(arr[i]);
+    }
+    return arr;
+}
+var incTheSecArray = [1,2,3,4,5,6];
+//console.log(incrementTheSeconds(incTheSecArray));
+
+//Given array arr and number num, multiply each arr value by num, and return the changed arr.
+function scaleTheArray(arr, num){
+    for(var i = 0; i < arr.length; i++){
+        arr[i] *= num;
+    }
+    return arr;
+}
+var scaleArray = [1,2,3,4,5,6];
+var scaleNum = 2;
+//console.log(scaleTheArray(scaleArray, scaleNum));
