@@ -117,7 +117,7 @@ function specialDay(num1, num2){
         console.log("Just another day...");
     }
 }
-//specialDay(21, 10);
+specialDay(12, 10);
 
 //Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop.
 function fourDown(){
@@ -153,7 +153,7 @@ function leapyear(input){
         console.log("Not a Leap Year.")
     }
 }
-var year = 2000;
+var year = 2020;
 //leapyear(year);
 
 //This is based on “Flexible Countdown”. The parameter names are not as helpful, but the problem is essentially identical; don’t be thrown off! Given 4 parameters (param1,param2,param3,param4), print the multiples of param1, starting at param2 and extending to param3. One exception: if a multiple is equal to param4, then skip (don’t print) it. Do this using a WHILE. Given (3,5,17,9), print 6,12,15 (which are all of the multiples of 3 between 5 and 17, and excluding the value 9).
