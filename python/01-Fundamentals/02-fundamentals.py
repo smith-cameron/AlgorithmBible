@@ -65,3 +65,15 @@ def goldilocks(arr):
         return "Just right!"
 algo7Array = [6,14,53,7,9,13]
 #print(goldilocks(algo7Array))
+
+#8) Fahrenheit to Celsius
+def far2cel(dFarenheit):
+    dCelsius = (dFarenheit - 32) / (9/5)
+    return dCelsius
+#print(far2cel(32))
+
+#9) Celsius to Fahrenheit
+def cel2far(dCelsius):
+    dFahrenheit = (9/5 * dCelsius) +32
+    return dFahrenheit
+print(cel2far(0))
