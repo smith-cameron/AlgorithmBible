@@ -160,7 +160,7 @@ function swapInwards(arr){
     return arr;
 }
 var swapInArray = [1,2,3,4,5,6];
-//console.log(swapInwards(swapInArray));
+console.log(swapInwards(swapInArray));
 
 //Given arr, add 1 to odd elements ([1], [3], etc.), console.log all values and return arr.
 function incrementTheSeconds(arr){
