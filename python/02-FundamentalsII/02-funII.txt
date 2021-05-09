@@ -1,15 +1,14 @@
 1 - Modulo Operator
 So far you have learned about basic arithmetic operators to add (+), subtract (-), multiply (*) and divide (/). You may also have realized that JavaScript uses the + operator to concatenate strings as well! Now we want to introduce you to another operator, called modulo (%). Modulo is a companion operator to divide – think of it as “remainder”. Given two numbers, modulo divides the second number into the first number an integer number of times, and returns the remainder. Examples: (34 % 6) is 4 because 34 integer-divides into 6 five times (30), leaving a remainder of 4. Modulo is great for determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no, it is not.
 
-2 - Threes and Fives
-Create threesFives() that adds values from 100 and 4000000 (inclusive) if that value is evenly
-divisible by 3 or 5 but not both. Display the final sum in the console.
-    Second: Create betterThreesFives(start,end) that allows you to enter arbitrary start and end values for your range. Think of threesFives()as betterThreesFives(100,4000000).
+2.1 - Threes and Fives
+Create threesFives() that adds values from 100 and 4000000 (inclusive) if that value is evenly divisible by 3 or 5 but not both. Display the final sum in the console.
+    2.2: Create betterThreesFives(start,end) that allows you to enter arbitrary start and end values for your range. Think of threesFives()as betterThreesFives(100,4000000).
 
-3 - Generate Coin Change
+3.1 - Generate Coin Change
 Change is inevitable (especially when breaking a twenty). Make generateCoinChange(cents). Accept a number of American cents, compute and print how to represent that amount with smallest number of coins. Common American coins are pennies (1 cent), nickels (5 cents), dimes (10 cents), and quarters (25 cents).
-    Second: can you simplify/shorten your code?
-    Third: add half-dollar (50 cents) and dollar (100 cents) coins with 40 additional characters or less.
+    3.2: can you simplify/shorten your code?
+    3.3: add half-dollar (50 cents) and dollar (100 cents) coins with 40 additional characters or less.
         Example output, given (94):
         94 cents can be represented by:
         quarters: 3

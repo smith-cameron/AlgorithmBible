@@ -1,9 +1,10 @@
 'use strict';
 //Stan learned something today: that directly decrementing an array’s .length immediately shortens it by that amount. Given array arr and number X, remove all except the last X elements, and return arr (changed and shorter). Given ([2,4,6,8,10],3), change the given array to [6,8,10] and return it.
-function keepAFew(){
-
+function keepAFew(arr, x){
+    
+    return arr
 }
-
+console.log(keepAFew([2,4,6,8,10],3))
 //Cartman doesn’t really like math; he needs help. You are given two numbers – coefficients M and B in the equation Y = MX + B. Build a function to return the X-intercept (his older cousin Fiaz wisely reminds him that X-intercept is the value of X where Y equals zero; Cartman just snorts in his general direction).
 function mathHelp(){
 
@@ -31,5 +32,5 @@ function letterGrade(){
 
 //For an additional challenge, add ‘-’ signs to scores in the bottom two percent of A, B, C and D scores, and “+” signs to the top two percent of B, C and D scores (sorry, Mr. Cerise never gives an A+). Given 88, console.log "Score: 88. Grade: B+". Given 61, log "Score: 61. Grade: D-" .
 function accurateLetterGrade(){
-    
+
 }

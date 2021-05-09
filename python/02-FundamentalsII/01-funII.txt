@@ -7,14 +7,14 @@ Just the Facts, ma’am. Factorials, that is. Write a function factorial(num) th
 
 3 - Star Art
 Assume that you have a text field that is exactly 75 characters long. You want to fill it with spaces and asterisks ('*'), sometimes called stars. You should print the given number of asterisks consecutively. Depending on which function is called, those stars should be left-justified (first star would be very first char in the text field), or right-justified (last star would be very last char in the text field, with potentially some number of spaces at beginning of text field before the block of stars start), or centered in the 75- character text field (with same number of spaces on either side of the block of stars, plus/minus one).
-     Write a function drawLeftStars(num) that accepts a number and prints that many asterisks.
-     Write a function drawRightStars(num) that prints 75 characters total. Stars should build from right side. The last num characters should be asterisks; the other 75 should be spaces.
-     Write function drawCenteredStars(num) that prints 75 characters total. The stars should be centered in the 75. The middle num characters should be asterisks; the rest of the 75 spaces.
-     (optional) Create epic text-art Empire vs. Rebellion battle scenes, with ships like (=*=)and >o<.
+    .1 Write a function drawLeftStars(num) that accepts a number and prints that many asterisks.
+    .2 Write a function drawRightStars(num) that prints 75 characters total. Stars should build from right side. The last num characters should be asterisks; the other 75 should be spaces.
+    .3 Write function drawCenteredStars(num) that prints 75 characters total. The stars should be centered in the 75. The middle num characters should be asterisks; the rest of the 75 spaces.
+    .4 (optional) Create epic text-art Empire vs. Rebellion battle scenes, with ships like (=*=)and >o<.
 
 4 - Character Art
 From the above, derive the following that accept and draw the given characters, not just asterisks:
-     drawLeftChars(num,char)
-     drawRightChars(num,char)
-     drawCenteredChars(num,char)
+    .1 drawLeftChars(num,char)
+    .2 drawRightChars(num,char)
+    .3 drawCenteredChars(num,char)
 For all three of these, you can safely assume that 'char' is a string with length 1
