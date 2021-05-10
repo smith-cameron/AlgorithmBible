@@ -17,3 +17,13 @@ Swap positions of successive pairs of values of given array. If length is odd, d
 Sara is looking to hire an awesome web developer and has received applications from various sources. Her assistant alphabetized them but noticed some duplicates. Given a sorted array, remove duplicate values. Because array elements are already in order, all duplicate values will be grouped together. As with all these array challenges, do this without using any built-in array methods.
     Second: solve this without using any nested loops.
 
+7 - Write a function that takes in an existing dictionary as a parameter and then returns to the user a new dictionary with the key/values swapped. For example, if given:
+alphabet_index = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4,
+    "e": 5,
+    "f": 6
+}
+The output will be {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f'}

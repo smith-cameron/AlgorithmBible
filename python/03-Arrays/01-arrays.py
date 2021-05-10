@@ -26,5 +26,48 @@ def insert(input, idx, num):
 
 #4 - Array: Remove At
 def remove(input, idx):
-    for i in range()
-print(remove([1,2,3,4], 2))
+    for i in range(len(input)-1):
+        if i == idx:
+            temp = input[i]
+            input[i] = input[i+1]
+            input[i+1] = temp
+    return input.pop()
+#print(remove([1,2,3,4], 2))
+
+#5 - Array: Swap Pairs
+def swapPairs(input):
+    for i in range(0, len(input)-1, +2):
+        temp = input[i]
+        input[i] = input[i+1]
+        input[i+1] = temp
+    return input
+#print(swapPairs(["Brendan",True,42,False]))
+
+#6 - Array: Remove Duplicates ***********
+def removeDuplicates(input):
+    i = 0
+    while i < len(input):
+        print("List length: {}".format(len(input)))
+        print("Currant value of i: {}".format(input[i]))
+        if input[i] == input[i-1]:
+            index = i
+            for i in range(index, len(input)-1):
+                temp = input[i]
+                input[i] = input[i+1]
+                input[i+1] = temp
+            print(input)
+            input.pop()
+            i+=1
+        i+=1
+    return input
+#print(removeDuplicates([1,1,2,3,4,4,5,6,7,7,8,9]))
+
+def swapDict(input):
+    for k in input:
+        temp = k
+        k = input[k]
+        input[k] = temp
+    return input
+
+alphabet_index = {'a': 1,'b': 2,'c': 3,'d': 4,'e': 5,'f': 6}
+print(swapDict(alphabet_index))
