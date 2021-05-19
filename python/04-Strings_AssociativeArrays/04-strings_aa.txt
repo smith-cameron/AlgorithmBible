@@ -7,3 +7,14 @@ Associative arrays are also called hashes (we’ll learn why later). Build inver
 3 - Associative Array: Number of Values (without .Length)
 Without using the .length property that is present on all arrays, determine and return the number of values in the given array. If we were to do this on a numerical array, we might check to see whether the element at a certain numerical index was undefined. Unfortunately, we can’t do that here because the keys don’t have any sort of predictable order or first value.
 So, for object { band: "Travis Shredd & the Good Ol’ Homeboys", style: "Country/Metal/Rap", album: "668: The Neighbor of the Beast" }, you should return the value 3, because there are three keys in this object: band, style and album.
+
+4 - Swap Associative Array Indexes: Write a function that takes in an existing dictionary as a parameter and then returns to the user a new dictionary with the key/values swapped. For example, if given:
+alphabet_index = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4,
+    "e": 5,
+    "f": 6
+}
+The output will be {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f'}
