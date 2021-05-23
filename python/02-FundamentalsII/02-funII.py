@@ -32,11 +32,33 @@ num1 = 49
 num2 = 233
 #print("{} is the total sum.".format(betterThreesFives(num1, num2)))
 
-#3 - Generate Coin Change
-def makingCents(input):
+#3.1-3.3 - Generate Coin Change
+def makingCents(chg):
+    if chg > 100:
+        DL = chg/100
+        print('Dollars: {}'.format(DL))
+        chg -= (DL*100)
+    if chg > 50:
+        HD = chg/50
+        print('Half-Dollar: {}'.format(HD))
+        chg -= (HD*50)
+    if chg > 25:
+        Q = chg/25
+        print('Quarters: {}'.format(Q))
+        chg -= (Q*25)
+    if chg > 10:
+        D = chg/10
+        print('Dimes: {}'.format(D))
+        chg -= (D*10)
+    if chg > 5:
+        N = chg/5
+        print('Nickles: {}'.format(N))
+        chg -= (N*5)
+    if chg > 1:
+        P = chg/1
+        print('Pennies: {}'.format(P))
+        chg -= (P*1)
+myCents = 193
+makingCents(myCents)
 
-
-
-
-myCents = 78
-print(makingCents(myCents))
+#4 - Messy Math Mashup
