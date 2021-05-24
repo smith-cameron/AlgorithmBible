@@ -71,5 +71,7 @@ def messyMath(num):
             sum += (i*2)
         else:
             sum += i
+        if i == (num % 3 == 0):
+            return -1
     return sum
 print(messyMath(8))
