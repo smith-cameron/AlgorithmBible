@@ -59,6 +59,17 @@ def makingCents(chg):
         print('Pennies: {}'.format(P))
         chg -= (P*1)
 myCents = 193
-makingCents(myCents)
+#makingCents(myCents)
 
 #4 - Messy Math Mashup
+def messyMath(num):
+    sum = 0
+    for i in range(num+1):
+        if i % 3 == 0:
+            continue
+        if i % 7 == 0:
+            sum += (i*2)
+        else:
+            sum += i
+    return sum
+print(messyMath(8))
