@@ -151,9 +151,9 @@ def clockHandAngles(seconds):
     hourD = 0
     minD = 0
     secD = 0
-#   logic here
+
     print(f"Hour hand: {hourD} degs. Minute hand: {minD} degs. Second hand: {secD} degs.")
-#clockHandAngles(3600)
+clockHandAngles(3600)
 
 #9 - Is Prime
 def isPrime(num):
@@ -163,3 +163,22 @@ def isPrime(num):
 #print(isPrime(11))
 
 #10 - Rockin’ the Dojo Sweatshirt
+def sweatshirtPricing(num):
+    print(f"{num} sweatshirts")
+    cost = 0
+    if num >= 4:
+        cost = (num * 20) - (60 * .35)
+        print(f"discount is: ${(60 * .35)}")
+    elif num == 3:
+        cost = (num * 20) - (60 * .19)
+        print(f"discount is: ${(60 * .19)}")
+    elif num == 2:
+        cost = (num * 20) - (40 * .09)
+        print(f"discount is: ${(40 * .09)}")
+    else:
+        cost = (num * 20)
+    return round(cost, 0)
+sweatshirts = 5
+#print(f"Total Bill: ${sweatshirtPricing(sweatshirts)}")
+
+#11 - Clock Hand Angles, Revisited
