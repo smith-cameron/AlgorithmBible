@@ -151,7 +151,8 @@ def clockHandAngles(seconds):
     hourD = 0
     minD = 0
     secD = 0
-
+    #for seconds input = 3600 return hourD = 30. minD = 0. secD = 0
+    #for seconds input = 119730 return hourD = 277.745. minD = 93. secD = 180
     print(f"Hour hand: {hourD} degs. Minute hand: {minD} degs. Second hand: {secD} degs.")
 clockHandAngles(3600)
 
