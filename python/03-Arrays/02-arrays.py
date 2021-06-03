@@ -24,12 +24,23 @@ def reverse(list):
 
 #3 - Array: Rotate
 def rotate(list, shift):
-    for i in range(shift):
-        temp = list[len(list)-1]
-        for i in range(len(list)-1,0,-1):
-            list[i] = list[i-1]
-        list[0] = temp
+    if shift < 0:
+        print("Shift Left")
+        for i in range(len(list)-1, 0, shift):
+            temp = list[0]
+            for i in range(0, len(list)-1, +1):
+                list[i] = list[i+1]
+            list[len(list)-1] = temp
+    if shift > 0:
+        print("Shift Right")
+        for i in range(shift):
+            temp = list[len(list)-1]
+            for i in range(len(list)-1, 0, -1):
+                list[i] = list[i-1]
+            list[0] = temp
+    if shift == 0:
+        print("No Shift")
     return list
 aList = [1,2,3,4,5,6,7]
-offset = 3
+offset = -1
 print(rotate(aList,offset))
