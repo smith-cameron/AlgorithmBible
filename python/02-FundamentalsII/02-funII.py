@@ -146,7 +146,7 @@ def sumToOne(num):
     return sumToOne(sum)
 #print(sumToOne(927))
 
-#8 - Clock Hand Angles
+#8 - Clock Hand Angles ******
 def clockHandAngles(seconds):
     hourD = 0
     minD = 0
@@ -182,4 +182,4 @@ def sweatshirtPricing(num):
 sweatshirts = 5
 #print(f"Total Bill: ${sweatshirtPricing(sweatshirts)}")
 
-#11 - Clock Hand Angles, Revisited
+#11 - Clock Hand Angles, Revisited ******

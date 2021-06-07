@@ -22,7 +22,7 @@ def reverse(list):
     return list
 #print(reverse(myList))
 
-#3 - Array: Rotate
+#3 - Array: Rotate ******
 def rotate(list, shift):
     if shift < 0:
         print("Shift Left")
@@ -42,5 +42,40 @@ def rotate(list, shift):
         print("No Shift")
     return list
 aList = [1,2,3,4,5,6,7]
-offset = -1
-print(rotate(aList,offset))
+offset = -2
+#print(rotate(aList,offset))
+#****** NEEDS FIX: Shift right works fine. Shift left(-1) works as if its right by 1. Shift left(-2+) works as if its shifting by one more respectively.(-2 shifts by -3, -3 shifts by -4, etc...)
+
+#4 - Array: Filter Range
+def filterByRange(list, min, max):
+    for j in range(len(list)-1):
+        if list[j] > min and list[j] < max:
+            sel = list[j]
+            for i in range(sel-1, len(list)-1):
+                temp = list[i]
+                list[i] = list[i+1]
+                list[i+1] = temp
+            list.pop(len(list)-1)
+    return list
+#print(filterByRange([1,2,3,4,5,6,7,8,9], 3, 5))
+
+#5 - Array: Concat
+def concat(list, list2):
+    return list + list2
+#print(concat(['a','b'], [1,2]))
+
+#6 - Skyline Heights
+def skyline(list):
+    newList = []
+    for i in range(len(list)-1):
+        if list[i] > 0:
+            currentValue = list[i]
+            if len(newList) == 0:
+                newList.append(currentValue)
+            else:
+                if currentValue <= newList[len(newList)-1]:
+                    continue
+                else:
+                    newList.append(currentValue)
+    return newList
+#print(skyline([-1,7,3]))
