@@ -1,18 +1,21 @@
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
-    for i in range(len(input)-1):
-        print(len(input)-1)
-        print(input)
-        if input[i] < 0: #IndexError: list index out of range
-            currentValue = i
-            for x in range(currentValue, len(input)-1):
+    i = 0
+    while i < len(input):
+        if input[i] < 0:
+            for x in range(i, len(input)-1):
                 temp = input[x]
                 input[x] = input[x+1]
                 input[x+1] = temp
             input.pop()
+        i += 1
     return input
-#print(removeNegatives([2,-1,3,-14,4]))
-#****** As the list shrinks the for loop falls out of range.
+#print(removeNegatives([2,-1,0]))   #works
+#print(removeNegatives([2,-1,0,-3]))   #works
+#print(removeNegatives([2,0,4,-3]))  #works
+#print(removeNegatives([2,-1,0,-4,-3])) #leaves the -3
+print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
+#print(removeNegatives([2,-1,4,0,-3]))   #works
 
 #2 - Array: Second-to-Last
 def secondLast(list):
@@ -55,4 +58,4 @@ def nThLargest(list, N):
     if len(list) < N:
         return None
     #return the Nth-largest element
-print(nThLargest([5,2,3,6,4,9,7],3))
+#print(nThLargest([5,2,3,6,4,9,7],3))
