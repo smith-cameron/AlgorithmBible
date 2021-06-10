@@ -1,15 +1,23 @@
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
     i = 0
+    count = 0
     while i < len(input):
         if input[i] < 0:
+            print(input[i])
             for x in range(i, len(input)-1):
                 temp = input[x]
                 input[x] = input[x+1]
                 input[x+1] = temp
             input.pop()
+            count += 1
+            #i -=3
+
         i += 1
+    print("{} negatives".format(count))
+
     return input
+#****** When input[i] is negative the function shifts it to the end(8-11). when it returns to line five it iterates +1 which skips the value shifted into the previous index
 #print(removeNegatives([2,-1,0]))   #works
 #print(removeNegatives([2,-1,0,-3]))   #works
 #print(removeNegatives([2,0,4,-3]))  #works
