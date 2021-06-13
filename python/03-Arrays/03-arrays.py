@@ -3,9 +3,9 @@ def removeNegatives(input):
     i = 0
     count = 0
     while i < len(input):
-        if input[i-1] < 0:
-            print(input[i-1])
-            for x in range(i-1, len(input)-1):
+        if input[i] < 0:
+            print(input[i])
+            for x in range(i, len(input)-1):
                 temp = input[x]
                 input[x] = input[x+1]
                 input[x+1] = temp
@@ -18,12 +18,13 @@ def removeNegatives(input):
 
     return input
 #****** When input[i] is negative the function shifts it to the end(8-11). when it returns to line five it iterates +1 which skips the value shifted into the previous index
+
 #print(removeNegatives([2,-1,0]))   #works 1
 #print(removeNegatives([2,-1,0,-3]))   #works 2
 #print(removeNegatives([2,0,4,-3]))  #works4
-#print(removeNegatives([2,-1,0,-4,-3])) #works5
+#print(removeNegatives([2,-1,0,-4,-3])) #leaves the -3
 #print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
-print(removeNegatives([2,-1,4,0,-3]))   #works 3
+#print(removeNegatives([2,-1,4,0,-3]))   #works 3
 
 #2 - Array: Second-to-Last
 def secondLast(list):
@@ -60,10 +61,24 @@ def nThLast(list, index):
             count += 1
 #print(nThLast([5,2,3,6,4,9,7],3))
 
-#5 - Array: Nth-Largest
+#5 - Array: Nth-Largest ******
 def nThLargest(list, N):
-    #if the list has less elements than the boundary value return null
     if len(list) < N:
         return None
     #return the Nth-largest element
 #print(nThLargest([5,2,3,6,4,9,7],3))
+
+#6 - Credit Card Validation
+def isCreditCardValid(list):
+    last = list[len(list)-1]
+    list.pop()
+    sum = 0
+    for i in range(len(list)-1, 0, -2):
+        list[i] *= 2
+        if list[i] > 9:
+            list[i] -= 9
+    for i in range(len(list)):
+        sum += list[i]
+    sum += last
+    return sum
+#print(isCreditCardValid([5,2,2,8,2]))
