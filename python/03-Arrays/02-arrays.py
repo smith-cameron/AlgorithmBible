@@ -20,7 +20,7 @@ def reverse(list):
         list[i] = list[len(list)-1-i]
         list[len(list)-1-i] = temp
     return list
-#print(reverse(myList))
+print(reverse([4,2,1,3,5]))
 
 #3 - Array: Rotate ******
 def rotate(list, shift):
