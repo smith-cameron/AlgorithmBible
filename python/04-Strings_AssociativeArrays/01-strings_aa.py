@@ -8,7 +8,6 @@ def removeBlanks(input):
 def getDigits(input):
     characters = []
     for i in range(2, len(input), +2):
-        print(i)
         characters.append(input[i])
     output = "".join(characters)
     return output
@@ -36,7 +35,7 @@ def nonSpaces(input):
     return count
 #print(nonSpaces("Honey pie, you are driving me crazy"))
 
-#5 - Remove Shorter Strings
+#5 - Remove Shorter Strings ******
 def stringLength(list, boundary):
     #iterate though string list
     i = 0
@@ -47,7 +46,6 @@ def stringLength(list, boundary):
                 temp = list[x]
                 list[x] = list[x+1]
                 list[x+1] = temp
-                print(list)
                 x += 1
             i+= 1
             list.pop()
@@ -57,10 +55,23 @@ def stringLength(list, boundary):
                 temp = list[x]
                 list[x] = list[x+1]
                 list[x+1] = temp
-                print(list)
                 x += 1
             i+= 1
             list.pop()
     i += 1
     return list
-print(stringLength(["Live","f","New","k,","e","Saturday","Night!"], 2))
+# ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for [3] "k," ges skipped.
+#print(stringLength(["Live","f","New","k,","e","Saturday","Night!"], 5))
+
+#6 - String: Reverse
+def reverse(input):
+    char = []
+    for i in range(len(input)):
+        char.append(input[i])
+    for i in range(len(char)/2):
+        temp = char[i]
+        char[i] = char[len(char)-1-i]
+        char[len(char)-1-i] = temp
+    output = "".join(char)
+    return output
+print(reverse("creature"))
