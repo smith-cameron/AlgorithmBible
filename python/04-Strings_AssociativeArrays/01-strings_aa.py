@@ -40,21 +40,27 @@ def nonSpaces(input):
 def stringLength(list, boundary):
     #iterate though string list
     i = 0
-    while i < len(list):
-        #compare string lengths to boundary value
-        print(list[i])
-        print(len(list[i]))
+    while i < len(list)-1:
         if len(list[i]) < boundary:
-            #move it to the end and pop()
-            # x = 0
-            # while x < len(list):
-            #     temp = list[x]
-            #     list[x] = list[x+1]
-            #     list[x+1] = temp
-            #     #list.pop()
-            #     x += 1
-            i += 1
-        print(list)
-        i += 1
+            x = i
+            while x < len(list)-1:
+                temp = list[x]
+                list[x] = list[x+1]
+                list[x+1] = temp
+                print(list)
+                x += 1
+            i+= 1
+            list.pop()
+        if len(list[0]) < boundary:
+            x = 0
+            while x < len(list)-1:
+                temp = list[x]
+                list[x] = list[x+1]
+                list[x+1] = temp
+                print(list)
+                x += 1
+            i+= 1
+            list.pop()
+    i += 1
     return list
-print(stringLength(["Live","from","New","York,","it's","Saturday","Night!"], 5))
+print(stringLength(["Live","f","New","k,","e","Saturday","Night!"], 2))
