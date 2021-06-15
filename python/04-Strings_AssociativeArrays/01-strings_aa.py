@@ -36,8 +36,7 @@ def nonSpaces(input):
 #print(nonSpaces("Honey pie, you are driving me crazy"))
 
 #5 - Remove Shorter Strings ******
-def stringLength(list, boundary):
-    #iterate though string list
+def removeShorts(list, boundary):
     i = 0
     while i < len(list)-1:
         if len(list[i]) < boundary:
@@ -60,8 +59,8 @@ def stringLength(list, boundary):
             list.pop()
     i += 1
     return list
-# ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for [3] "k," ges skipped.
-#print(stringLength(["Live","f","New","k,","e","Saturday","Night!"], 5))
+# ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for list[3] "k," ges skipped.
+#print(removeShorts(["Live","f","New","k,","e","Saturday","Night!"], 5))
 
 #6 - String: Reverse
 def reverse(input):
@@ -74,4 +73,9 @@ def reverse(input):
         char[len(char)-1-i] = temp
     output = "".join(char)
     return output
-print(reverse("creature"))
+#print(reverse("creature"))
+
+#7 - Remove Even-Length Strings
+def removeEvenStr(input):
+    return input
+print(removeEvenStr(["Nope!","Its","Kris","starting","with","K!","(instead","of","Chris","with", "C)","."]))
