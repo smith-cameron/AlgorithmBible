@@ -60,7 +60,7 @@ def removeShorts(list, boundary):
     i += 1
     return list
 # ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for list[3] "k," ges skipped.
-#print(removeShorts(["Live","f","New","k,","e","Saturday","Night!"], 5))
+#print(removeShorts(["Live","from","New","York,","it","'","s","Saturday","Night!"], 5))
 
 #6 - String: Reverse
 def reverse(input):
@@ -75,7 +75,26 @@ def reverse(input):
     return output
 #print(reverse("creature"))
 
-#7 - Remove Even-Length Strings
+#7 - Remove Even-Length Strings ******
 def removeEvenStr(input):
+    i = 0
+    while i < len(input):
+        indvString = input[i]
+        chars = []
+        for x in range(len(indvString)):
+            chars.append(indvString[x])
+        if len(chars) % 2 == 0:
+            # print(chars)
+            temp = input[i]
+            input[i] = input[i+1]
+            input[i+1] = temp
+            input.pop()
+        i += 1
     return input
+# ****** When writing functions that shift once the desired value is shifted and you iterate to the "next" value you have in fact moved two values down because the original next value is now a t the presant spot of the iterator. I need a solution to this.
 print(removeEvenStr(["Nope!","Its","Kris","starting","with","K!","(instead","of","Chris","with", "C)","."]))
+
+#8 - Integer to Roman Numerals
+def int2Rom(num):
+    pass
+#print(int2Rom(4))
