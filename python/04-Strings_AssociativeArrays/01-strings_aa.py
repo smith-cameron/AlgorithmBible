@@ -59,7 +59,7 @@ def removeShorts(list, boundary):
             list.pop()
     i += 1
     return list
-# ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for list[3] "k," ges skipped.
+# ****** if boundary is <= 4 the while loop never terminates... or starts. code just runs. if 5 or higher it works except for list[3] "k," gets skipped.
 #print(removeShorts(["Live","from","New","York,","it","'","s","Saturday","Night!"], 5))
 
 #6 - String: Reverse
@@ -84,7 +84,6 @@ def removeEvenStr(input):
         for x in range(len(indvString)):
             chars.append(indvString[x])
         if len(chars) % 2 == 0:
-            # print(chars)
             temp = input[i]
             input[i] = input[i+1]
             input[i+1] = temp
