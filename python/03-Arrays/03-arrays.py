@@ -1,7 +1,6 @@
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
     # i = 0
-    count = 0
     for i in range (len(input)):
         if input[i] < 0:
             # print(input[i])
@@ -9,8 +8,7 @@ def removeNegatives(input):
                 temp = input[x]
                 input[x] = input[x+1]
                 input[x+1] = temp
-            input.pop()
-            count += 1
+            #input.pop()
             #i -=3
 
         i += 1
