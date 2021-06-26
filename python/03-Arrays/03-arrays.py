@@ -1,26 +1,38 @@
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
-    # i = 0
-    for i in range (len(input)):
+    i =0
+    size = len(input)
+    while i < size:
         if input[i] < 0:
-            # print(input[i])
-            for x in range(i, len(input)-1):
-                temp = input[x]
-                input[x] = input[x+1]
-                input[x+1] = temp
-            #input.pop()
-            #i -=3
-
+            input = remove(input, i)
+            i += 1
         i += 1
-    # print("{} negatives".format(count))
-
     return input
-#****** When input[i] is negative the function shifts it to the end(8-11). when it returns to line five it iterates +1 which skips the value shifted into the previous index
+#****** When input[i] is negative the function removes it. when it returns to line five it iterates +1 which skips the value shifted into the previous index
+
+def remove(input, idx):
+    newList = []
+    if idx < 0:
+        for i in range(1,len(input)):
+            newList.append(input[i])
+        return newList
+    if idx > len(input):
+        for i in range(len(input)-1):
+            newList.append(input[i])
+        return newList
+    for i in range(len(input)):
+        if i != idx:
+            newList.append(input[i])
+    return newList
+
+# print(remove([1,2,3,4,5],3))
+# print(remove([1,2,3,4,5],-3))
+# print(remove([1,2,3,4,5],8))
 
 #print(removeNegatives([2,-1,0]))   #works 1
-#print(removeNegatives([2,-1,0,-3]))   #works 2
+#print(removeNegatives([2,-1,0,-3]))   #leaves -3
 #print(removeNegatives([2,0,4,-3]))  #works4
-#print(removeNegatives([2,-1,0,-4,-3])) #leaves the -3
+print(removeNegatives([2,-1,0,-4,-3])) #leaves the -4??
 print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
 #print(removeNegatives([2,-1,4,0,-3]))   #works 3
 
