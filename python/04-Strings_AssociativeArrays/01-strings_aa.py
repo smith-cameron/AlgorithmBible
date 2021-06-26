@@ -79,10 +79,10 @@ def reverse(input):
 def removeEvenStr(input):
     i = 0
     while i < len(input):
-        indvString = input[i]
+        string = input[i]
         chars = []
-        for x in range(len(indvString)):
-            chars.append(indvString[x])
+        for x in range(len(string)):
+            chars.append(string[x])
         if len(chars) % 2 == 0:
             temp = input[i]
             input[i] = input[i+1]
@@ -90,7 +90,7 @@ def removeEvenStr(input):
             input.pop()
         i += 1
     return input
-# ****** When writing functions that shift once the desired value is shifted and you iterate to the "next" value you have in fact moved two values down because the original next value is now a t the presant spot of the iterator. I need a solution to this.
+# ****** When writing functions that shift once the desired value is shifted and you iterate to the "next" value you have in fact moved two values down because the original next value is now at the presant spot of the iterator. I need a solution to this.
 print(removeEvenStr(["Nope!","Its","Kris","starting","with","K!","(instead","of","Chris","with", "C)","."]))
 
 #8 - Integer to Roman Numerals

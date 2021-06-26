@@ -1,10 +1,10 @@
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
-    i = 0
+    # i = 0
     count = 0
-    while i < len(input):
+    for i in range (len(input)):
         if input[i] < 0:
-            print(input[i])
+            # print(input[i])
             for x in range(i, len(input)-1):
                 temp = input[x]
                 input[x] = input[x+1]
@@ -14,7 +14,7 @@ def removeNegatives(input):
             #i -=3
 
         i += 1
-    print("{} negatives".format(count))
+    # print("{} negatives".format(count))
 
     return input
 #****** When input[i] is negative the function shifts it to the end(8-11). when it returns to line five it iterates +1 which skips the value shifted into the previous index
@@ -23,7 +23,7 @@ def removeNegatives(input):
 #print(removeNegatives([2,-1,0,-3]))   #works 2
 #print(removeNegatives([2,0,4,-3]))  #works4
 #print(removeNegatives([2,-1,0,-4,-3])) #leaves the -3
-#print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
+print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
 #print(removeNegatives([2,-1,4,0,-3]))   #works 3
 
 #2 - Array: Second-to-Last
