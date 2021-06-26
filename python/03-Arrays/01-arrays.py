@@ -45,10 +45,10 @@ def swapPairs(input):
 
 #6 - Array: Remove Duplicates ***********
 def removeDuplicates(input):
+    print(input.pop(input[-1]))
     for i in range( len(input)):
         if input[i] == input[i-1]:
-            index = i
-            for i in range(index, len(input)-1):
+            for i in range(i, len(input)-1):
                 temp = input[i]
                 input[i] = input[i+1]
                 input[i+1] = temp
@@ -57,3 +57,14 @@ def removeDuplicates(input):
     return input
 print(removeDuplicates([1,1,2,2,3,4,4,4,5,6,7,7,8,9,9]))
 # doesnt work if theres more than 2 duplicates
+
+def remove(input, idx):
+    #idx -= 1
+    size=len(input)
+    if idx <= 0:
+        return [input[i] for i in range(1,size)]
+    if idx >= size:
+        return [input[i] for i in range(size-1)]
+    return [input[i] for i in range(size) if i!=idx]
+
+print(remove([1,2,3,4], 1))
