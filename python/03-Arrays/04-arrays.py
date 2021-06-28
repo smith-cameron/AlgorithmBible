@@ -34,15 +34,16 @@ def intSums(input):
     for i in range(len(input)):
         sum += input[i]
         print(sum)
-        if i % 10 == 0:
+        print(input)
+        if i > 1 and i % 9 == 0:
             input.append(sum)
             for i in range(len(input)-1, i,  -1):
                 temp = input[i]
                 input[i] = input[i-1]
                 input[i-1] = temp
             sum = 0
-        elif i == len(input)-1:
+        if i == len(input)-2:
             input.append(sum)
 
     return input
-print(intSums([1,2,1,2,1,2,1,2,1,2,1,2,1]))
+print(intSums([1,2,1,2,1,2,1,2,1,2,1,2,1,2]))
