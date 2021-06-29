@@ -20,7 +20,7 @@ def reverse(list):
         list[i] = list[len(list)-1-i]
         list[len(list)-1-i] = temp
     return list
-print(reverse([4,2,1,3,5]))
+#print(reverse([4,2,1,3,5]))
 
 #3 - Array: Rotate ******
 def rotate(list, shift):
@@ -41,9 +41,7 @@ def rotate(list, shift):
     if shift == 0:
         print("No Shift")
     return list
-aList = [1,2,3,4,5,6,7]
-offset = -2
-#print(rotate(aList,offset))
+print(rotate([1,2,3,4,5,6,7],8))
 #****** NEEDS FIX: Shift right works fine. Shift left(-1) works as if its right by 1. Shift left(-2+) works as if its shifting by one more respectively.(-2 shifts by -3, -3 shifts by -4, etc...)
 
 #4 - Array: Filter Range

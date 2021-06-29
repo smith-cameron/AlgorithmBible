@@ -1,4 +1,4 @@
-#1 - Array: Shuffle
+#1 - Array: Shuffle******
 
 #2 - Array: Remove Range******
 def remove(input, idx):
@@ -46,4 +46,24 @@ def intSums(input):
             input.append(sum)
 
     return input
-print(intSums([1,2,1,2,1,2,1,2,1,2,1,2,1,2]))
+#print(intSums([1,2,1,2,1,2,1,2,1,2,1,2,1,2]))
+
+#4 - Double Trouble
+def doubleTrouble(input):
+    newList = []
+    for i in range(len(input)):
+        newList.append(input[i])
+        newList.append(input[i])
+    return newList
+#print(doubleTrouble([4, "ulysses", 42, False]))
+
+#5 - Zip It******
+def zipIt(input1, input2):
+    newList = []
+    len(input1)
+    len(input2)
+    for i in range(len(input1)):
+        newList.append(input1[i])
+        newList.append(input2[i])
+    return newList
+print(zipIt([1,2,3],[4,5,6,7,8]))
