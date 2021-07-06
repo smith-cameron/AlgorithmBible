@@ -1,3 +1,5 @@
+import platform
+print(platform.python_version())
 #1 - Array: Shuffle******
 
 #2 - Array: Remove Range******
@@ -66,4 +68,7 @@ def zipIt(input1, input2):
         newList.append(input1[i])
         newList.append(input2[i])
     return newList
-print(zipIt([1,2,3],[4,5,6,7,8]))
+#print(zipIt([1,2,3],[4,5,6,7,8]))
+
+def zipIt2(input1, input2):
+    return input1
