@@ -88,6 +88,16 @@ def coins(chg):
             chg -= 1
             pennies += 1
         return dollars, halfDollars, quarters, dimes, nickles, pennies
+
+def coins2(coin):
+    change=[]
+    change.append(int(coin/25))
+    change.append(int((coin%25)/10))
+    change.append(int(((coin%25)%10)/5))
+    change.append(int(((coin%25)%10)%5))
+    return(change)
+
+print(coins2(40))
 #print(coins(myCents))
 
 #4 - Messy Math Mashup
@@ -154,7 +164,7 @@ def clockHandAngles(seconds):
     #for seconds input = 3600 return hourD = 30. minD = 0. secD = 0
     #for seconds input = 119730 return hourD = 277.745. minD = 93. secD = 180
     print(f"Hour hand: {hourD} degs. Minute hand: {minD} degs. Second hand: {secD} degs.")
-clockHandAngles(3600)
+#clockHandAngles(3600)
 
 #9 - Is Prime
 def isPrime(num):
