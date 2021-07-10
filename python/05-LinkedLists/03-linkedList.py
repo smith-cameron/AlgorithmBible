@@ -57,8 +57,10 @@ class SinglyLinkedList:
         i = self.head
         while (i != None):
             if i.value <= min:
-                min = i.value
+                min = i
             i = i.next
-        
+        min.next = self.head
+        self.head = min
+        return self
 thisList = SinglyLinkedList()
-thisList.addFront(9).addFront(4.3).addFront(6).addFront(3.5).addFront(1).removeLast().addLast(7).display().last()
+thisList.addFront(9).addFront(-4).addFront(6).addFront(3.5).addFront(1).removeLast().addLast(7).last().min2Front().display()
