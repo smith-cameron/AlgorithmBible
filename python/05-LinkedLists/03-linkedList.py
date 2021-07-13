@@ -53,14 +53,13 @@ class SinglyLinkedList:
         self.size += 1
         return self
     def min2Front(self):
-        min = self.head.value
+        min = self.head
         i = self.head
         while (i != None):
-            if i.value <= min:
+            if i.value <= min.value:
                 min = i
             i = i.next
-        min.next = self.head
-        self.head = min
+        # print(min.value)
         return self
 thisList = SinglyLinkedList()
-thisList.addFront(9).addFront(-4).addFront(6).addFront(3.5).addFront(1).removeLast().addLast(7).last().min2Front().display()
+thisList.addFront(9).addFront(-4).addFront(6).addFront(3.5).addFront(1).addLast(7).display().min2Front()
