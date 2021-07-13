@@ -8,16 +8,14 @@ function arrayCountdown(input){
     console.log("My Array is "+newArray.length+" indices long.");
     return newArray;
 }
-var digets = 4;
-//console.log(arrayCountdown(digets));
+//console.log(arrayCountdown(4));
 
 //Your function will receive an array with two numbers. Print the first value, and return the second.
 function printAndReturn(input){
     console.log("Printing: "+input[0]);
     return input[1];
 }
-var arrayOfTwo = [32, 44];
-//console.log("Returning: "+printAndReturn(arrayOfTwo));
+//console.log("Returning: "+printAndReturn([32, 44]));
 
 //Given an array, return the sum of the first value in the array, plus the array’s length. What happens if the array’s first value is not a number, but a string (like "what?") or a boolean (like false).
 //A string of a number "32" or a word "what?" appended the length. return was 322 for ["32", 44] and what?2 for ["what?", 44]
@@ -25,8 +23,7 @@ var arrayOfTwo = [32, 44];
 function firstPlusLength(input){
     return input[0]+input.length;
 }
-var firstPLArray = [true, 44];
-//console.log(firstPlusLength(firstPLArray));
+//console.log(firstPlusLength([true, 44]));
 
 //For [1,3,5,7,9,13], print values that are greater than its 2nd value. Return how many values this is.
 function greaterThan(input, minIndex){
@@ -39,9 +36,7 @@ function greaterThan(input, minIndex){
     }
     return sum;
 }
-var index = 1;
-var greaterThanArray = [1,3,5,7,9,13];
-//console.log("Total values greater than "+greaterThanArray[index]+" : "+greaterThan(greaterThanArray, index));
+// console.log("Total values greater than "+[1,3,5,7,9,13][1]+" : "+greaterThan([1,3,5,7,9,13], 1));
 
 //Write a function that accepts any array, and returns a new array with the array values that are greater than its 2nd value. Print how many values this is. What will you do if the array is only one element long?
 function greaterThanAny(input, index){
@@ -57,7 +52,7 @@ function greaterThanAny(input, index){
     }
     return sum;
 }
-//console.log("Total values greater than "+greaterThanArray[index]+" : "+greaterThanAny(greaterThanArray, index));
+//console.log("Total values greater than "+[1,3,5,7,9,13][1]+" : "+greaterThanAny([1,3,5,7,9,13], 1));
 
 //Given two numbers, return array of length num1 with each value num2. Print "Jinx!" if they are same.
 function thisAndThat(num1, num2){
@@ -70,9 +65,7 @@ function thisAndThat(num1, num2){
     }
     return newArray;
 }
-var that = 5;
-var that2 = 5;
-//console.log(thisAndThat(that, that2));
+//console.log(thisAndThat(5, 5));
 
 //Your function should accept an array. If value at [0] is greater than array’s length, print "Too big!"; if value at [0] is less than array’s length, print "Too small!"; otherwise print "Just right!".
 function goldielocks(input){
@@ -86,21 +79,18 @@ function goldielocks(input){
         return "Just right!";
     }
 }
-var glArr = [4,2,3,4];
-//console.log(goldielocks(glArr));
+//console.log(goldielocks([4,2,3,4]));
 
 //Kelvin wants to convert between temperature scales. Create fahrenheitToCelsius(fDegrees) that accepts a number of degrees in Fahrenheit, and returns the equivalent temperature as expressed in Celsius degrees. For review, Fahrenheit = (9/5 * Celsius) + 32.
 function fahrenheitToCelsius(fDegrees){
     var celsius = (fDegrees - 32) / (9/5);
     return celsius;
 }
-var fDegrees = 14;
-//console.log(fahrenheitToCelsius(fDegrees));
+//console.log(fahrenheitToCelsius(14));
 
 //Create celsiusToFahrenheit(cDegrees) that accepts number of degrees Celsius, and returns the equivalent temperature expressed in Fahrenheit degrees. (optional) Do Fahrenheit and Celsius values equate at a certain number? Scientific calculation can be complex, so for this challenge just try a series of Celsius integer values starting at 200, going downward (descending), checking whether it is equal to the corresponding Fahrenheit value.
 function celsiusToFahrenheit(cDegrees){
     var fahrenheit = (9/5 * cDegrees) + 32;
     return fahrenheit;
 }
-var cDegrees = -10;
-//console.log(celsiusToFahrenheit(cDegrees));
+//console.log(celsiusToFahrenheit(-10));
