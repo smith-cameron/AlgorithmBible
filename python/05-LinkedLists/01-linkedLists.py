@@ -1,14 +1,11 @@
-class ListNode():
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-class LinkedList():
+from SLListModule import Node
 
+class LinkedList():
     def __init__(self):
         self.head = None
         self.size = 0
     def addFront(self , value):
-        newNode = ListNode(value)
+        newNode = Node(value)
         runner = self.head
         newNode.next = runner
         self.head = newNode

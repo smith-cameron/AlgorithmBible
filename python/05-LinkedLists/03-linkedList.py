@@ -1,11 +1,8 @@
-class Node():
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+from SLListModule import Node
 
-class SinglyLinkedList:
+class SLLMethods():
     def __init__(self):
-        self.head = None
+        self.head = List.head
         self.size = 0
     def addFront(self , value):
         newNode = Node(value)
@@ -61,5 +58,5 @@ class SinglyLinkedList:
             i = i.next
         # print(min.value)
         return self
-thisList = SinglyLinkedList()
+thisList = SLLMethods()
 thisList.addFront(9).addFront(-4).addFront(6).addFront(3.5).addFront(1).addLast(7).display().min2Front()

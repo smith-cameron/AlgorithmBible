@@ -1,9 +1,6 @@
-class Node():
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+from SLListModule import Node
 
-class SinglyLinkedList:
+class SinglyLinkedList():
     def __init__(self):
         self.head = None
         self.size = 0
