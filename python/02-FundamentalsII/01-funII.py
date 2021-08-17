@@ -17,7 +17,7 @@ def factorial(num):
 #3.1 - Star Art
 def drawLeftStars(num):
     print("*"*num)
-#drawLeftStars(25)
+drawLeftStars(25)
 
 #3.2 - Star Art
 def drawRightStars(num):
