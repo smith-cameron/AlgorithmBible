@@ -21,7 +21,7 @@ function printAndReturn(input){
 function sumStuff(input){
     return input[0]+input.length;
 }
-console.log(sumStuff([true, 44]));
+// console.log(sumStuff([true, 44]));
 // true evaluates as 1+ length
 // false evaluates as 0+ length
 
@@ -29,11 +29,27 @@ console.log(sumStuff([true, 44]));
 function return2(input){
     return input[0]+input.length
 }
-console.log(return2(["what?", 44]));
+// console.log(return2(["what?", 44]));
 // string concatonates
 
 //5
-// ???
+function greaterThanIndex1(input){
+    var output = [];
+    var count = 0;
+    var min = input[1];
+    if (input.length > 2){
+        for(var i = 0; i <= input.length; i++){
+            if( input[i] > min){
+                output.push(input[i]);
+                count += 1;
+            }
+        }
+        console.log(count);
+        return output;
+    }
+    console.log("Minimum of two indexes required");
+}
+console.log(greaterThanIndex1([12,2,3,4,5]));
 
 //6
 function greaterThan(input, minIndex){
