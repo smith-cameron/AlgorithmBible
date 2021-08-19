@@ -15,8 +15,11 @@ def printReturn(arr):
 #3) First Plus Length
 def firstPlus(arr):
     return arr[0] + len(arr)
-algo3Array = [5,8,4,5,7]
-#print(firstPlus(algo3Array))
+algo3Array = ["True",8,4,5,7]
+print(firstPlus(algo3Array))
+# Strings won't concatonate
+# true evaluates as 1+ length
+# false evaluates as 0+ length
 
 #4) Values Greater than Second
 def printGreaterSum(arr):
@@ -76,4 +79,4 @@ def far2cel(dFarenheit):
 def cel2far(dCelsius):
     dFahrenheit = (9/5 * dCelsius) +32
     return dFahrenheit
-print(cel2far(0))
+# print(cel2far(0))

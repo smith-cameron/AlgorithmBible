@@ -21,13 +21,16 @@ function printAndReturn(input){
 function sumStuff(input){
     return input[0]+input.length;
 }
-//console.log(sumStuff([true, 44]));
+console.log(sumStuff([true, 44]));
+// true evaluates as 1+ length
+// false evaluates as 0+ length
 
 //4
 function return2(input){
     return input[0]+input.length
 }
 console.log(return2(["what?", 44]));
+// string concatonates
 
 //5
 // ???
