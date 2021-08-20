@@ -14,7 +14,11 @@ public class Fun02 {
         return num2;
     }
     // 3
-    public int[] firstPlus(int[] input){
-        return input[0]+ input.length;
+    public int firstPlusInt(int[] input){
+        return input[0] + input.length;
     }
+    public String firstPlus(String[] input){
+        return input[0] + input.length;
+    }
+    // 
 }

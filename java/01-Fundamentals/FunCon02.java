@@ -3,6 +3,10 @@ public class FunCon02 {
         Fun02 algo = new Fun02();
         System.out.println(algo.countDown(5));
         System.out.println(algo.printReturn(5,10));
-        
+        int[] inputInt = {3,4,5};
+        System.out.println(algo.firstPlusInt(inputInt));
+        String[] input = {"3","4","5"};
+        System.out.println(algo.firstPlus(input));
     }
+
 }
