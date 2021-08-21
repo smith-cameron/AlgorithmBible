@@ -16,7 +16,7 @@ def printReturn(arr):
 def firstPlus(arr):
     return arr[0] + len(arr)
 algo3Array = ["True",8,4,5,7]
-print(firstPlus(algo3Array))
+# print(firstPlus(algo3Array))
 # Strings won't concatonate
 # true evaluates as 1+ length
 # false evaluates as 0+ length
@@ -70,13 +70,13 @@ algo7Array = [6,14,53,7,9,13]
 #print(goldilocks(algo7Array))
 
 #8) Fahrenheit to Celsius
-def far2cel(dFarenheit):
+def fahrenheitToCelsius(dFarenheit):
     dCelsius = (dFarenheit - 32) / (9/5)
     return dCelsius
-#print(far2cel(32))
+print(fahrenheitToCelsius(109))
 
 #9) Celsius to Fahrenheit
-def cel2far(dCelsius):
-    dFahrenheit = (9/5 * dCelsius) +32
+def celsiusToFahrenheit(dCelsius):
+    dFahrenheit = (9/5 * dCelsius) + 32
     return dFahrenheit
-# print(cel2far(0))
+print(celsiusToFahrenheit(77))
