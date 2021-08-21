@@ -20,5 +20,31 @@ public class Fun02 {
     public String firstPlus(String[] input){
         return input[0] + input.length;
     }
-    // 
+    // 4
+    public int greaterThan(int[] input){
+        int count = 0;
+        for(int i = 0; i < input.length; i++){
+            if(input[i] > input[1]){
+                count += 1;
+            }
+        }
+        return count;
+    }
+    public ArrayList<Integer> greaterThanAgain(int[] input){
+        ArrayList<Integer> output = new ArrayList<Integer>();
+        int count = 0;
+        if( input.length < 2){
+            System.out.println("Get a longer array!");
+        }
+        else{
+            for(int i = 0; i < input.length; i++){
+                if(input[i] > input[1]){
+                    output.add(input[i]);
+                    count += 1;
+                }
+            }
+        }
+        System.out.println(count);
+        return output;
+    }
 }
