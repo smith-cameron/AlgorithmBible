@@ -27,7 +27,13 @@ public class Fun03 {
     // 5
     public int printAreturnB(int[] input){
         int firstOdd = 0;
-        
+        for(int i = 0; i < input.length; i++){
+            if(input[i] % 2 != 0){
+                firstOdd = input[i];
+                break;
+            }
+        }
+        System.out.println(input[input.length-2]);
         return firstOdd;
     }
 }

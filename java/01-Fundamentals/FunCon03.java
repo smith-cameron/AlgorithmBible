@@ -4,6 +4,6 @@ public class FunCon03 {
         int[] inputRH = {2,4,3,8,5,7};
         System.out.println(algo.returnHigh(inputRH));
         System.out.println(algo.addSeven(inputRH));
-
+        System.out.println(algo.printAreturnB(inputRH));
     }
 }
