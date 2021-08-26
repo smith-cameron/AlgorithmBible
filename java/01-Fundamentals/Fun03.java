@@ -36,4 +36,5 @@ public class Fun03 {
         System.out.println(input[input.length-2]);
         return firstOdd;
     }
+    
 }
