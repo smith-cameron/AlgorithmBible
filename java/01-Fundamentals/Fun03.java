@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 public class Fun03 {
     // 1 & 2 Not able to mix array data types in java
     // 3
@@ -36,5 +37,14 @@ public class Fun03 {
         System.out.println(input[input.length-2]);
         return firstOdd;
     }
-    
+    // 6
+    public String reverseArray(int[] input){
+        // System.out.println(input);
+        for(int i = 0; i < input.length/2; i++){
+            int temp = input[i];
+            input[i] = input[input.length-1-i];
+            input[input.length-1-i] = temp;
+        }
+        return Arrays.toString(input);
+    }
 }

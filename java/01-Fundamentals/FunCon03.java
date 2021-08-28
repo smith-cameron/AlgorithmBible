@@ -5,5 +5,6 @@ public class FunCon03 {
         System.out.println(algo.returnHigh(inputRH));
         System.out.println(algo.addSeven(inputRH));
         System.out.println(algo.printAreturnB(inputRH));
+        System.out.println(algo.reverseArray(inputRH));
     }
 }
