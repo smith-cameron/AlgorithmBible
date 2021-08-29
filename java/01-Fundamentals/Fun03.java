@@ -47,4 +47,12 @@ public class Fun03 {
         }
         return Arrays.toString(input);
     }
+    // 7
+    public String doubleEm(int[] input){
+        int[] output = new int[3];
+        for(int i = 0; i < input.length; i++){
+            output[i] = input[i] * 2;
+        }
+        return Arrays.toString(output);
+    }
 }
