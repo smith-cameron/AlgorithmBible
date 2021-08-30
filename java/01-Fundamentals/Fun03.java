@@ -55,4 +55,17 @@ public class Fun03 {
         }
         return Arrays.toString(output);
     }
+    // 8
+    public ArrayList<Integer> negativeOutlook(int[] input){
+        ArrayList<Integer> output = new ArrayList<Integer>();
+        for(int i = 0; i < input.length; i++){
+            if(input[i] <= 0){
+                output.add(input[i]);
+            }
+            else{
+                output.add(input[i] * -1);
+            }
+        }
+        return output;
+    }
 }

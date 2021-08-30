@@ -3,10 +3,12 @@ public class FunCon03 {
         Fun03 algo = new Fun03();
         int[] input = {2,4,3,8,5,7};
         int[] inputDEm = {1,2,3};
+        int[] inputNOutlook = {1,-3,5,-0};
         System.out.println(algo.returnHigh(input));
         System.out.println(algo.addSeven(input));
         System.out.println(algo.printAreturnB(input));
         System.out.println(algo.reverseArray(input));
         System.out.println(algo.doubleEm(inputDEm));
+        System.out.println(algo.negativeOutlook(inputNOutlook));
     }
 }
