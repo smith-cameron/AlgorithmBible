@@ -122,7 +122,7 @@ year = 2000
 def flexibleCountdown(min, max, mult):
     for i in range(max, min, -mult):
         print(i)
-#flexibleCountdown(2,9,3)
+flexibleCountdown(2,9,3)
 
 #15) The Final Countdown
 def finalCountdown(mult, min, max, exclude):
