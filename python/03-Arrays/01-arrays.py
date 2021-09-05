@@ -10,9 +10,10 @@ def popFront(input):
         temp = input[i]
         input[i] = input[i+1]
         input[i+1] = temp
-    input.pop()
+    len(input)-1
+    print(input)
     return input
-#print(popFront([1,2,3,4]))
+print(popFront([1,2,3,4]))
 
 #3 - Array: Insert At
 def insert(input, idx, num):
@@ -31,8 +32,8 @@ def remove(input, idx):
             temp = input[i]
             input[i] = input[i+1]
             input[i+1] = temp
-    return input.pop()
-#print(remove([1,2,3,4], 2))
+    return len(input)-1
+# print(remove([1,2,3,4], 2))
 
 #5 - Array: Swap Pairs
 def swapPairs(input):
@@ -43,14 +44,14 @@ def swapPairs(input):
     return input
 #print(swapPairs(["Brendan",True,42,False]))
 
-#6 - Array: Remove Duplicates 
+#6 - Array: Remove Duplicates
 def removeDuplicates(input):
     newList = []
     for i in range(len(input)):
         if input[i] != input[i-1]:
             newList.append(input[i])
     return newList
-print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
+# print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
 
 def remove(input, idx):
     size = len(input)
