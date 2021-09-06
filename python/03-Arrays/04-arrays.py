@@ -17,6 +17,7 @@ def remove(input, idx):
         if i != idx:
             output.append(input[i])
     return output
+
 def removeRange(input, idx1, idx2):
     # for i in range(idx1, idx2):
     #     input = remove(input,i)
