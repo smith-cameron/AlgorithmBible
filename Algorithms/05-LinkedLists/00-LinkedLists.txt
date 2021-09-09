@@ -1,0 +1,58 @@
+1 - List: Add Front
+Given a pointer to the first ListNode and a value, create a new node, assign it to the list head, and return a pointer to the new head node.
+
+2 - List: Contains
+Given a ListNode pointer and a val, return whether val is found in any node in the list.
+
+3 - List: Remove Front
+Given a pointer to the first node in a list, remove the head node and return the new list head node. If list is empty, return null.
+
+4 - List: Front
+Return the value (not the node) at the head of the list. If list is empty, return null.
+
+1 - SList: Length
+Create a function that accepts a pointer to the first list node, and returns number of nodes in that SList.
+
+2 - SList: Display
+Create display(node) for debugging that returns a string containing all list values. Build what you wish console.log(myList) did!
+
+3 - SList: Max
+Create function max(node) to return list’s largest val.
+
+4 - SList: Min
+Create min(node) to return list’s smallest val.
+
+5 - SList: Average
+Create average(node) to return average val.
+
+1 - SList: Back
+Create a function that accepts a ListNode pointer and returns the last value in the list.
+
+2 - SList: Remove Back
+Create a standalone function that removes the last ListNode in the list and returns the new list.
+
+3 - SList: Add Back
+Create a function that creates a ListNode with given value and inserts it at end of a linked list.
+
+4 - SList: Move Min to Front **
+Create a standalone function that locates the minimum value in a linked list, and moves that node to the front of the list. Return the new list, with all nodes still present, and all (except for the new head node) in their original order.
+
+5 - SList: Move Max to Back
+Create a standalone function that locates the maximum value in a linked list, and moves that node to the back of the list. Return the new list, with all nodes still present, and all in their original order except for the node you moved to the end of the singly linked list.
+
+1 - SList: Prepend Val
+Create prependVal(ListNode,val,before) to insert a new ListNode with val immediately before the node containing before (or at end, if no node contains before). Return the new list.
+
+2 - SList: Append Val
+Create appendVal(list,val,after) that inserts a new ListNode containing given val immediately after the node containing after (or at end, if after not found). Return the new list.
+
+3 - Create SList (prompt)
+Create an SList with values entered. Use the prompt function to gather values one at a time from the user, putting each into a ListNode that you add to the end of the list. When the user hits [Cancel], return the list you have created.
+
+4 - SList: Remove Val
+Create removeVal(ListNode,val). Given a pointer to the head ListNode, remove the node with the given val. Return the new list. What will you do if val is not found?
+
+Here is the humble-but-mighty ListNode class:
+def ListNode(value):
+    self.val = value
+    self.next = None

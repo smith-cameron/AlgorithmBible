@@ -1,9 +1,0 @@
-1 - List: Add Front
-Given a pointer to the first ListNode and a value, create a new node, assign it to the list head, and return a pointer to the new head node.
-2 - List: Contains
-Given a
-ListNode pointer and a val, return whether val is found in any node in the list.
-3 - List: Remove Front
-Given a pointer to the first node in a list, remove the head node and return the new list head node. If list is empty, return null.
-4 - List: Front
-Return the value (not the node) at the head of the list. If list is empty, return null.
