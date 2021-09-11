@@ -1,3 +1,7 @@
+import time
+
+
+import time
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
     i =0
@@ -11,6 +15,7 @@ def removeNegatives(input):
 #****** When input[i] is negative the function removes it. when it returns to line five it iterates +1 which skips the value shifted into the previous index
 
 def remove(input, idx):
+    start = time.time()
     newList = []
     if idx < 0:
         for i in range(1,len(input)):
@@ -23,17 +28,19 @@ def remove(input, idx):
     for i in range(len(input)):
         if i != idx:
             newList.append(input[i])
+    runtime = time.time() - start
+    print(f"{runtime} seconds to run")
     return newList
 
-# print(remove([1,2,3,4,5],3))
+print(remove([1,2,3,4,5],3))
 # print(remove([1,2,3,4,5],-3))
 # print(remove([1,2,3,4,5],8))
 
 #print(removeNegatives([2,-1,0]))   #works 1
 #print(removeNegatives([2,-1,0,-3]))   #leaves -3
 #print(removeNegatives([2,0,4,-3]))  #works4
-print(removeNegatives([2,-1,0,-4,-3])) #leaves the -4??
-print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
+# print(removeNegatives([2,-1,0,-4,-3])) #leaves the -4??
+# print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
 #print(removeNegatives([2,-1,4,0,-3]))   #works 3
 
 #2 - Array: Second-to-Last

@@ -1,5 +1,7 @@
+import time
 #1) Setting and Swapping
 def swapValues():
+    start = time.time()
     myNumber = 42
     myName = 'Cameron'
     print(myNumber)
@@ -9,16 +11,22 @@ def swapValues():
     myName = temp
     print(myNumber)
     print(myName)
-#swapValues()
+    runtime = time.time()-start
+    print(f"{runtime} second to run")
+
+# swapValues()
 
 #2) Print and Count
 def printMultiplesOf5():
+    start = time.time()
     sum = 0
     for i in range(5, 4096, 5):
         print(i)
         sum += 1
     print(sum)
-#printMultiplesOf5()
+    runtime = time.time()-start
+    print(f"{runtime} second to run")
+printMultiplesOf5()
 
 #3) Print -52 to 1066
 def printInt():
@@ -122,7 +130,7 @@ year = 2000
 def flexibleCountdown(min, max, mult):
     for i in range(max, min, -mult):
         print(i)
-flexibleCountdown(2,9,3)
+# flexibleCountdown(2,9,3)
 
 #15) The Final Countdown
 def finalCountdown(mult, min, max, exclude):
