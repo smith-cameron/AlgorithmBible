@@ -2,7 +2,7 @@
 So far you have learned about basic arithmetic operators to add (+), subtract (-), multiply (*) and divide (/). You may also have realized that JavaScript uses the + operator to concatenate strings as well! Now we want to introduce you to another operator, called modulo (%). Modulo is a companion operator to divide – think of it as “remainder”. Given two numbers, modulo divides the second number into the first number an integer number of times, and returns the remainder. Examples: (34 % 6) is 4 because 34 integer-divides into 6 five times (30), leaving a remainder of 4. Modulo is great for determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no, it is not.
 
 2.1 - Threes and Fives
-Create threesFives() that adds values from 100 and 4000000 (inclusive) if that value is evenly divisible by 3 or 5 but not both. Display the final sum in the console.
+Create threesFives() that adds values from 100 to 4000000 (inclusive) if that value is evenly divisible by 3 or 5 but not both. Display the final sum in the console.
     2.2: Create betterThreesFives(start,end) that allows you to enter arbitrary start and end values for your range. Think of threesFives()as betterThreesFives(100,4000000).
 
 3.1 - Generate Coin Change
