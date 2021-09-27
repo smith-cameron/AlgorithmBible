@@ -1,40 +1,40 @@
-1 - List: Add Front
+1 - List: Add Front X
 Given a pointer to the first ListNode and a value, create a new node, assign it to the list head, and return a pointer to the new head node.
 
-2 - List: Contains
+2 - List: Contains X
 Given a ListNode pointer and a val, return whether val is found in any node in the list.
 
-3 - List: Remove Front
+3 - List: Remove Front X
 Given a pointer to the first node in a list, remove the head node and return the new list head node. If list is empty, return null.
 
-4 - List: Front
+4 - List: Front X
 Return the value (not the node) at the head of the list. If list is empty, return null.
 
-1 - SList: Length
+1 - SList: Length X
 Create a function that accepts a pointer to the first list node, and returns number of nodes in that SList.
 
-2 - SList: Display
+2 - SList: Display X
 Create display(node) for debugging that returns a string containing all list values. Build what you wish console.log(myList) did!
 
-3 - SList: Max
+3 - SList: Max X
 Create function max(node) to return list’s largest val.
 
-4 - SList: Min
+4 - SList: Min X
 Create min(node) to return list’s smallest val.
 
-5 - SList: Average
+5 - SList: Average X
 Create average(node) to return average val.
 
-1 - SList: Back
+1 - SList: Back X
 Create a function that accepts a ListNode pointer and returns the last value in the list.
 
-2 - SList: Remove Back
+2 - SList: Remove Back X
 Create a standalone function that removes the last ListNode in the list and returns the new list.
 
-3 - SList: Add Back
+3 - SList: Add Back X
 Create a function that creates a ListNode with given value and inserts it at end of a linked list.
 
-4 - SList: Move Min to Front **
+4 - SList: Move Min to Front X
 Create a standalone function that locates the minimum value in a linked list, and moves that node to the front of the list. Return the new list, with all nodes still present, and all (except for the new head node) in their original order.
 
 5 - SList: Move Max to Back
