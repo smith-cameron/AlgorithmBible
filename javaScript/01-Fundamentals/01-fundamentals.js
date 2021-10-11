@@ -84,7 +84,7 @@ function multiplesOf3(){
 function printParameter(input){
     console.log(input);
 }
-//printParameter("Hello World");
+printParameter("Hello World");
 
 // 10
 function printWhile(){

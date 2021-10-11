@@ -14,7 +14,7 @@ def swapValues():
     runtime = time.time()-start
     print(f"{runtime} second to run")
 
-# swapValues()
+swapValues()
 
 #2) Print and Count
 def printMultiplesOf5():

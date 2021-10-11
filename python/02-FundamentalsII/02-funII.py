@@ -59,7 +59,7 @@ def makingCents(chg):
         print(f'Pennies: {P}')
         chg -= (P*1)
 myCents = 297
-#makingCents(myCents)
+makingCents(myCents)
 
 def coins(chg):
     dollars = 0
@@ -97,7 +97,7 @@ def coins2(coin):
     change.append(int(((coin%25)%10)%5))
     return(change)
 
-print(coins2(40))
+# print(coins2(40))
 #print(coins(myCents))
 
 #4 - Messy Math Mashup

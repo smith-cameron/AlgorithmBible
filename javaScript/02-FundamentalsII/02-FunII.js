@@ -13,4 +13,15 @@ function threesFives(start, end){
     return sum;
 }
 
-console.log("Total: "+threesFives(0,30));
+// console.log("Total: "+threesFives(0,30));
+
+// 3.1
+function makingCents(input){
+    if(input > 100) {
+        dl = input/100;
+        console.log("Dollars: "+dl);
+        input -= (dl*100)
+    }
+    return input
+}
+console.log(makingCents(297));
