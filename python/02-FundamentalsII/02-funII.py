@@ -59,7 +59,7 @@ def makingCents(chg):
         print(f'Pennies: {P}')
         chg -= (P*1)
 myCents = 297
-makingCents(myCents)
+# makingCents(myCents)
 
 def coins(chg):
     dollars = 0
@@ -154,7 +154,7 @@ def sumToOne(num):
     for i in range(len(num)):
         sum += num[i]
     return sumToOne(sum)
-#print(sumToOne(927))
+print(sumToOne(928))
 
 #8 - Clock Hand Angles ******
 def clockHandAngles(seconds):

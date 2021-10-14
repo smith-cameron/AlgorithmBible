@@ -4,6 +4,7 @@
     "python.autoComplete.extraPaths": [
         "./path/to/module/code"
     ],
+    "code-runner.runInTerminal": true,
     "python.analysis.extraPaths": [],
     "code-runner.executorMap": {
         "javascript": "node",
@@ -57,4 +58,7 @@
         "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     }
+    
+        
+    
 }
