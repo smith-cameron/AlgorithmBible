@@ -43,7 +43,7 @@ function makingCents(input){
     }
     return input
 }
-console.log(makingCents(15));
+// console.log(makingCents(15));
 
 function mathMashUp(bound){
     var sum = 0;
@@ -78,3 +78,10 @@ function twelveBarBlues(){
 
 // twelveBarBlues();
 
+function rFib(input){
+    if(input <= 2){
+        return 1
+    }
+    return rFib(input - 1) + rFib(input - 2)
+}
+console.log(rFib(4))
