@@ -84,4 +84,4 @@ function rFib(input){
     }
     return rFib(input - 1) + rFib(input - 2)
 }
-console.log(rFib(4))
+console.log(rFib(7))

@@ -1,0 +1,81 @@
+Below are submissions for the “Basic 13” challenges. Unfortunately,
+some of these contain errors. Which solutions have bugs, what are they, and how would you fix them?
+
+1 - Print1To255()
+Print all the integers from 1 to 255.
+
+function print1to255(){
+var num = 1;            let instead of var
+while (num < 255) {    idx out of range(num <= 255) or else 255 wont be included
+console.log(num);
+num = num + 1;          num += 1 not wrong but shorter is better
+}
+}
+
+2 - PrintIntsAndSum0To255()
+Print integers from 0 to 255, and the sum so far.
+
+function printIntsAndSum0to255()
+{
+var sum = 0;                             let instead of var
+for(var num = 0;num <= 255;num++){ 
+    sum += num; 
+}
+return sum;                             return statement needs to be inside the function
+}
+
+3 - PrintMaxOfArray(arr)
+Print the largest element in a given array.
+
+function printMaxOfArray(arr) {
+if (arr.length == 0) {
+console.log("[], no max val.");
+return;
+}
+var max = 0;
+for (var idx = 0;
+idx < arr.length; idx++) {
+if (arr[idx] > max)
+{ max = arr[idx]; }
+}
+console.log("Max val is:", max);
+}
+
+4 - PrintOdds1To255()
+Print all odd integers from 1 to 255.
+
+function printOdds1to255()
+{
+var num = 1;
+while (num <= 255)
+{
+console.log(num + 2);
+}
+}
+
+5 - PrintArrayVals(arr)
+Print all values in a given array.
+
+function printArrayVals(arr) {
+for var idx = 0;idx < arr.length;
+arr++) {
+console.log("array[", idx,
+ "] =",arr[idx]);
+}
+}
+
+6 - PrintAverageOfArray(arr)
+Analyze an array’s values and print the average.
+
+arr = [1,4,7,2,5,8];
+if (arr.length == 0) {
+console.log("[ ], no avg val.");
+return;
+}
+var sum = arr[0];
+for (var idx=1;idx<arr.length;idx++)
+{
+sum += arr[idx];
+}
+console.log("Avg val:",
+sum/arr.length);

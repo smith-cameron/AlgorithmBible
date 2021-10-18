@@ -136,14 +136,13 @@ def fibonacci(num):
         num1 = num2
         num2 = sum
     return num2
-fibNum = 6
-#print(fibonacci(fibNum))
+#print(fibonacci(6))
 
 def rFibonacci(num):
     if num <= 2:
         return 1
     return rFibonacci(num - 1) + rFibonacci(num - 2)
-#print(rFibonacci(fibNum))
+#print(rFibonacci(4))
 
 #7 - Sum to One Digit
 def sumToOne(num):
