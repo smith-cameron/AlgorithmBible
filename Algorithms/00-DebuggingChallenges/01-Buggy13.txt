@@ -28,17 +28,17 @@ return sum;                             return statement needs to be inside the 
 Print the largest element in a given array.
 
 function printMaxOfArray(arr) {
-if (arr.length == 0) {
-console.log("[], no max val.");
-return;
-}
-var max = 0;
-for (var idx = 0;
-idx < arr.length; idx++) {
-if (arr[idx] > max)
-{ max = arr[idx]; }
-}
-console.log("Max val is:", max);
+    if (arr.length == 0) {
+        console.log("[], no max val.");     could directly return string with input param(arr)
+        return;
+    }
+    var max = 0;
+    for (var idx = 0; idx < arr.length; idx++) {
+        if (arr[idx] > max){ 
+            max = arr[idx]; 
+        }
+    }
+    console.log("Max val is:", max);
 }
 
 4 - PrintOdds1To255()
