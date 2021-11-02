@@ -47,4 +47,4 @@ console.log(num + 2);
 }
 num ++
 }
-printOdds1to255()
+// printOdds1to255()
