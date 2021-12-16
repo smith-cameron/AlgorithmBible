@@ -15,34 +15,39 @@ def minFront(list):
 
 #2 - Array: Reverse
 def reverse(list):
-    for i in range(len(list)/2):
+    for i in range(len(list)//2):
         temp = list[i]
         list[i] = list[len(list)-1-i]
         list[len(list)-1-i] = temp
     return list
-#print(reverse([4,2,1,3,5]))
+# print(reverse([4,2,1,3,5]))
 
-#3 - Array: Rotate ******
-def rotate(list, shift):
+#3 - Array: Rotate 
+def getShwifty(list, shift):
     if shift < 0:
-        print("Shift Left")
-        for i in range(len(list)-1, 0, shift):
+        print(f"Shift Left by: {shift*-1}")
+        for i in range(shift*-1):
             temp = list[0]
+            # print(f"outerLoopTemp: {temp}")
+            # print(f"outerLoopList: {list}")
             for i in range(0, len(list)-1, +1):
                 list[i] = list[i+1]
+                # print(f"innerLoopList: {list}")
             list[len(list)-1] = temp
     if shift > 0:
-        print("Shift Right")
+        print(f"Shift Right by: {shift}")
         for i in range(shift):
             temp = list[len(list)-1]
+            # print(f"outerLoopTemp: {temp}")
+            # print(f"outerLoopList: {list}")
             for i in range(len(list)-1, 0, -1):
                 list[i] = list[i-1]
+                # print(f"innerLoopList: {list}")
             list[0] = temp
     if shift == 0:
         print("No Shift")
     return list
-print(rotate([1,2,3,4,5,6,7],8))
-#****** NEEDS FIX: Shift right works fine. Shift left(-1) works as if its right by 1. Shift left(-2+) works as if its shifting by one more respectively.(-2 shifts by -3, -3 shifts by -4, etc...)
+print(f"output: {getShwifty([1,2,3,4,5,6,7,8,9,10,11,12,13],-5)}")
 
 #4 - Array: Filter Range
 def filterByRange(list, min, max):
