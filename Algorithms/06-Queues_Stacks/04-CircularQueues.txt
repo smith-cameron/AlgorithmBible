@@ -1,0 +1,42 @@
+Circular Queues
+When queue’s tail or head approaches size, wrap 
+around to [0] and continue. tail and head
+shouldn’t meet – one can’t “lap” the other. Instead,
+enqueue(val) fails: a full queue. Ditto dequeue(), 
+if empty. Constructor requires a size argument.
+Starting there, implement a circular queue!
+
+function CirQueue(cap) {
+var head = 0;
+var tail = 0;
+var capacity = cap;
+var arr = [];
+}
+
+
+- CirQueue: Front
+Return (not remove) the queue’s front value.
+
+- CirQueue: Is Empty
+Return whether queue is empty.
+
+- CirQueue: Is Full
+Return whether queue is full.
+
+- CirQueue: Size
+Return number of queued vals (not capacity).
+
+- CirQueue: Enqueue
+Create enqueue(val) that adds val to our 
+CirQueue, or returns false. Wrap if needed!
+
+- CirQueue: Dequeue
+Create CirQueue method dequeue() that
+removes/returns front value, or null on fail. 
+
+- CirQueue: Contains
+Return whether given val is within the queue.
+
+- CirQueue: Grow
+(advanced) Create method grow(newSize)
+that expands a CirQueue to a new given size.
