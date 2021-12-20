@@ -1,0 +1,140 @@
+Print1To255()
+Print all the integers from 1 to 255.
+function print1to255()
+{
+var num = 1;
+while (num <= 255) {
+console.log(num);
+}
+}
+PrintIntsAndSum0To255()
+Print ints 0-255, and with each the sum so far.
+var sum = 0;
+function printIntsAndSum0to255()
+{
+for (var num =0;num <=255;num++)
+{
+sum += num;
+console.log(num," – sum:",sum);
+}
+}
+PrintMaxOfArray(arr)
+Print the largest element in a given array.
+function printMaxOfArray(arr)
+{
+var max = arr[0];
+for(var idx = 1;idx < arr.length; 
+idx++){
+if (arr[idx] > max) {
+max = arr[idx];
+}
+}
+console.log("Max value:", max);
+}
+PrintOdds1To255()
+Print all odd integers from 1 to 255.
+function printOdds1to255() {
+var num = 1;
+while (num <= 255) {
+num = num + 2;
+console.log(num);
+}
+}
+PrintArrayVals(arr)
+Print all values in a given array.
+function printArrayVals()
+{
+for(var idx= 0; idx< arr.length;
+idx++) {
+console.log("arr[", idx,
+"]=", arr[idx]);
+}
+}
+PrintAverageOfArray(arr)
+Analyze an array’s values; print the average.
+function printAverageOfArray(arr)
+{
+if (arr.length == 0) {
+console.log("[], no average.");
+return;
+}
+var sum = arr[0];
+for(var idx = 1;idx < arr.length;
+idx++) {
+sum += arr[idx];
+console.log(sum/arr.length);
+}
+}
+ReturnOddsArray1To255()
+Create & return array with odd integers from 1-255. 
+function returnOddsArray1to255() {
+var oddArray = [];
+for (var num = 1; num <= 255; num += 2) {
+var temp = num;
+oddArray.push(temp);
+}
+return oddArray;
+}
+ReturnArrayCountGreaterThanY(arr, y)
+Given array, return the count that is greater than Y.
+var numGreater = 0;
+function returnArrayCountGreaterThanY(arr, y) {
+for (var idx = 0; idx < arr.length; idx++) {
+if (arr[idx]>y) { numGreater ++; }
+}
+console.log("%d are larger than %d", numGreater, y);
+}
+PrintMaxMinAverageArrayVals(arr)
+Given an array, print max, min and average values.
+function printMaxMinAverageArrayVals(arr) {
+if (arr.length == 0) {
+console.log("[], no min/max/avg");
+return;
+}
+var min = arr[0], max = arr[0];
+var sum = arr[0];
+for(var idx = 1; idx <= arr.length; idx++) {
+if (arr[idx] < min) { min = arr[idx]; }
+if (arr[idx] > max) { max = arr[idx]; }
+sum += arr[idx];
+}
+console.log("Max value:", max);
+console.log("Min value:", min);
+console.log("Avg:",sum/arr.length);
+return min, max, avg;
+}
+SquareArrayVals(arr)
+Given an array, square each value in the array.
+function squareArrVals(arr) 
+{
+var numSquareValues;
+for (var idx = 0; idx < arr.length; idx++) {
+arr[idx] = arr[idx] * arr[idx];
+}
+return numSquareValues;
+}
+ZeroOutArrayNegativeVals(arr)
+Given an array, set negative values to zero. 
+function zeroOutArrayNegativeVals() {
+for (var idx = 0; idx < arr.length; idx++) {
+if (arr[idx]<0) { arr[idx] = 0; }
+}
+}
+ShiftArrayValsLeft(arr)
+Given array, shift values forward by one, drop the first values and leave extra '0' value(s) at the end. 
+function shiftArrValsLeft(arr) {
+for (var idx = 1; idx < arr.length; idx++)
+{ arr[idx - 1] = idx; }
+arr[arr.length - 1] = 0;
+return arr;
+}
+SwapStringForArrayNegativeVals(arr)
+Given array, replace negative values with 'Dojo'. 
+function swapStringForArrayNegativeVals(arr) {
+for (var idx = 0; idx < arr.length; idx++) {
+if (arr[idx] < 0)
+arr[idx] == "Dojo";
+}
+}
+return arr;
+}

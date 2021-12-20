@@ -1,0 +1,6 @@
+ Where’s the Bug? (bitwise operators version)
+// How many bugs can you find? 
+function numSetBits(num) { // count num of set bits in a 64-bit val
+while (num) { bitCount = bitCount + num && 0x1; num = num >> 1; }
+return bitCount;
+} 

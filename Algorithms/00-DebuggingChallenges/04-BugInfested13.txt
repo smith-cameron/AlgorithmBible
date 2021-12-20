@@ -1,0 +1,192 @@
+Print1To255()
+Print all the integers from 1 to 255.
+function print1to255() {
+for (var num=1;num <=255;num++) {
+console.log(num);
+}
+PrintIntsAndSum0To255()
+Print integers from 0 to 255, and the sum so far.
+function printIntsAndSum0to255()
+{
+var sum = 0;
+for (var num=0; num<=255; 
+sum+=num,num++) {
+console.log(num+" - sum:"+sum);
+}
+}
+PrintMaxOfArray(arr)
+Print the largest element in a given array.
+function printMaxOfArray(arr)
+{
+if (arr.length == 0) {
+console.log("[], no max val.");
+}
+var max = arr[0];
+for (var idx=1; idx < arr.length; 
+idx++) {
+if (arr[idx] > max)
+{ max = arr[idx]; }
+}
+console.log("Max val:", max);
+}
+PrintOdds1To255()
+Print all odd integers from 1 to 255.
+function printOdds1to255() {
+for(var num = 1;num<= 255;num+=2)
+{ print(num); }
+}
+PrintArrayVals(arr)
+Print all values in a given array.
+function printArrayVals(arr)
+{
+for (var idx=0; idx < arr.length; 
+idx++)
+console.log("["+index+"]="+arr);
+}
+PrintAverageOfArray(arr)
+Analyze an array’s values and print the average.
+function printAverageOfArray(arr)
+{
+if (arr.length == 0) {
+console.log("Empty, no avg.");
+return;
+}
+var sum = arr[0];
+for(var idx=1; idx<arr.length-1;
+idx++) {
+sum += arr[idx];
+}
+console.log(sum/arr.length);
+}
+ReturnOddsArray1To255()
+Create & return array with odd integers 1-255. 
+function returnOddsArray1to255(arr){
+var oddArray = [];
+for(var num=1; num<=255;num+=2) {
+oddArray.push(num);
+}
+return oddArray;
+}
+ReturnArrayCountGreaterThanY(arr, y)
+Given array, return count greater than Y.
+function numGreaterThanY(arr, y) {
+var numGtr;
+for (var idx=0; idx<arr.length;
+idx++) {
+if (arr[idx] > y) { numGtr ++;}
+}
+console.log("%d > %d",numGtr,y);
+return numGtr;
+}
+SquareArrayVals(arr)
+Given an array, square each value in the array.
+function squareArrVals(arr)
+{
+for ( var idx = 0;idx<arr.length)
+idx++)
+{
+arr[idx] = arr[idx] * arr[idx];
+}
+}
+ZeroOutArrayNegativeVals(arr)
+Given an array, set negative values to zero. 
+function zeroOutArrNegativeVals(arr)
+{
+for ( var idx = 0;
+idx < arr.length; idx++) {
+if (idx < 0)
+{ arr[idx] = 0; }
+}
+}
+ShiftArrayValsLeft(arr)
+Given array, shift values forward. Drop first 
+value(s) and leave extra '0' value(s) at end. 
+function shiftArrValsLeft(arr)
+{
+for (var idx = 1;
+idx < arr.length;idx++) {
+arr[idx - 1] = arr[idx];
+}
+return arr;
+}
+SwapStringForArrayNegativeVals(arr)
+Replace negative array values with 'Dojo'. 
+function swapStrForArrNegVals(arr) {
+for (var idx=0; idx < arr.length;
+idx++){
+if (arr[idx] < 0) {
+arr[idx] = "Dojo";
+}
+}
+return arr;
+}
+PrintMaxMinAverageArrayVals(arr)
+Print max, min and average array values.
+function printMaxMinAverage(arr) {
+if (!arr.length) {
+console.log("[], no workie!");
+return;
+}
+var min, max, sum;
+min = max = sum = arr[0];
+for(var idx=1; idx<arr.length; 
+idx++) {
+if(arr[idx]<min) {min=arr[idx]}
+}
+for(var idx=1; idx<arr.length; 
+idx++) {
+if(arr[idx]>max) {max=arr[idx]}
+}
+for(var idx=1; idx<arr.length;
+idx++) { sum+=arr[idx]; }
+console.log("Max val:", max);
+console.log("Min val:", min);
+console.log(sum/arr.length);
+function printMaxMinAverage(arr) {
+if (arr.length == 0) {
+console.log("[]:No MinMaxAvg");
+return;
+}
+var min = arr[0];
+var max = arr[0];
+var sum = arr[0];
+for(var idx=1;idx<=arr.length;
+idx++){
+if(arr[idx]<min){min=arr[idx];}
+if(arr[idx]>max){max=arr[idx];}
+sum += arr[idx];
+}
+console.log("Max value:", max);
+console.log("Min value:", min);
+}
+function printMaxMinAverage(a)
+{
+if (a.length == 0)
+{
+console.log("[]:no MinMaxAvg");
+return;
+}
+var min,max,sum;
+min = max = sum = a[0];
+for(var idx=1;idx<a.length;idx++) 
+{
+if(a[idx]<min) {min=a[idx];}
+else
+if(a[idx]>max){max=a[idx];}
+else {sum+=a[idx]}
+}
+console.log("Max:", max);
+console.log("Min:", min);
+console.log("Avg:",sum/a.length);
+}
+function printMaxMinAverage(arr)
+{if(arr.length==0){console.log("Null 
+arr, no min/max/avg");return;}var
+min=arr[0];var max=arr[0];var 
+sum=arr[0];for(var 
+idx=1;idx<arr.length;idx++){if(arr[ 
+idx]<min){min=arr[idx];}if(arr[idx]>
+max){max=arr[idx];}sum+=arr[idx];} 
+console.log("Max:",max," Min:",min);
+console.log("Avg 
+value:",sum/arr.length);}
