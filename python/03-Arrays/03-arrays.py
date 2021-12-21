@@ -12,7 +12,7 @@ def removeNegatives(input):
             i += 1
         i += 1
     return input
-#****** When input[i] is negative the function removes it. when it returns to line five it iterates +1 which skips the value shifted into the previous index
+#****** When input[i] is negative the function removes it. when it returns to the loop it iterates +1 which skips the value shifted into the previous index
 
 def remove(input, idx):
     start = time.time()
