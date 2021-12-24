@@ -1,0 +1,23 @@
+Hexadecimal System
+For a second, imagine that each of us have had eight fingers on each hand, since birth. As a result, 
+when we created our numeral system, we created more than just 0-9 numerals. Instead, we created 
+enough numerals to represent every quantity that was “less than two hands” worth. In our hypothetical 
+world, that means there are extra numerals after 9 that represent in a single character the amounts up 
+to “two hands worth”. That system is hexadecimal (16-based), and hexadecimal numbers are prefixed
+by 0x (“zero-X”), just as octal numbers are prefixed by 0o (“zero-Oh”). The extra numerals 0xA, 0xB, 
+0xC, 0xD, 0xE, 0xF are equivalent to 10, 11, 12, 13, 14, 15. Each additional digit in hexadecimal is a 
+multiplication by 16, so the number 0x10 is equivalent to 16. The number 0x2A is equivalent to 42. 
+ Decimal to Hexadecimal
+For practice, convert the following from decimal to hexadecimal. Example: 31 becomes 0x1F. 
+13 6 25 8 45 10 -9 64 255 238
+ Hexadecimal to Decimal
+For practice, convert the following from hexadecimal to decimal. Example: 0x47 becomes 71.
+0xDB 0x5 0x20C 0x4F 0xB2 0x0 -0x12 0x7E 0x101
+ Decimal to Hexadecimal String
+Create a function dec2HexStr(value) that converts a number into a string representing that number 
+in hexadecimal notation. For this challenge, do not use the (very convenient) toString function. For 
+example, given the value 108, the function should return "0x6C". 
+ Hexadecimal String to Value
+Create a function hexStr2Val(str) that accepts a string representing an int in hexadecimal notation, 
+and returns the value. For this challenge, do not use the (very convenient) parseInt function. For 
+example, given the string "0x1D2", the function should return 466.

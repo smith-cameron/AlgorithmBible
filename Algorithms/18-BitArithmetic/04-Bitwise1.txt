@@ -1,0 +1,32 @@
+Bitwise Operators, Part 1
+Most math operators don’t know or care about a number system. Addition is addition, whether “10 + 11 
+= 21” or “0b1010 + 0b1011 = 0b10101”. Ditto subtraction, multiplication, division, negation,
+comparison and equality. Other operators make sense only if we think of numbers in binary 
+representation. To best understand these bitwise operators, we must first consider three logical 
+operators (AND, OR, NOT). These operators work on Boolean values, which are essentially one-bit 
+values (true = 1, false = 0).
+ && (logical AND) operates on two booleans. It returns true only if both are true, else false. 
+ || (logical OR) operates on two booleans, returning true if either is true, otherwise false. 
+ ! (logical NOT) operates on a single boolean value, inverting true to false and vice versa.
+Bitwise operators are equivalent to logical operators, except they work one-bit-at-a-time across entire
+numbers. Some bitwise operators accept two numbers, and others work on a single number. 
+ The bitwise AND operator is &. It operates on two numbers and compares them, one bit at a
+time (their least-significant bits, their second-least-significant bits, etc). If both bits are 1, then 
+that same bit in the result is set to 1, otherwise that bit is set to 0. It does this for every bit in the
+two operands. Example: 0b10101010 & 0b01100110 = 0b00100010.
+ The bitwise OR operator is |. It operates on two numbers and compares them, one bit at a time 
+(least-significant bits, second-least-significant bits, etc). If either are 1, then that bit in the result
+is set to 1, otherwise it is set to 0. It does this for every bit in the two operands. Example: 
+0b10101010 | 0b01100110 = 11101110. 
+ The bitwise NOT operator is ~. It operates on one number, examining one bit at a time in
+isolation. Each bit in the original is inverted in the result. Each 1 becomes 0; each 0 becomes 1. 
+Example: ~0b10101010 = 0b01010101.
+Note: JavaScript stores numbers as 64-bit (floating-point) values, but its bitwise operators operate on
+32-bit integers. So, before any bitwise operation begins, values are converted to 32-bit integer format. 
+For the expressions below, indicate the results in binary, hexadecimal and decimal notations:
+ Bitwise AND
+0b010101 & 0b0110111 57 & 87 0b01101001 & 0b00011000 0xBABE & 0xBEEF
+ Bitwise OR
+0b010101 | 0b0110111 57 | 87 0b01101001 | 0b00011000 0xBABE | 0xBEEF
+ Bitwise NOT
+~0b010101 ~0b0110111 ~5787 ~0b01101001 ~0b00011000 ~0xBABE ~0xBEE

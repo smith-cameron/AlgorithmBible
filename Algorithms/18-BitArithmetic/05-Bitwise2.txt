@@ -1,0 +1,32 @@
+Bitwise Operators, Part 2
+After & (bitwise AND), | (bitwise OR), and ~ (bitwise NOT), here are other important bitwise operators.
+ The bitwise XOR (exclusive or) operator is ^. It operates on two numbers and compares them, 
+one bit at a time. If the bits are different than each other, then that bit in the result is set to 1,
+otherwise it is set to 0. It does this for each bit in the two operands. Example: 
+0b10101010 ^ 0b01100110 = 0b11001100.
+ The bitwise LSL (shift left) operator is <<. It operates on two numbers and shifts the bits in the 
+first number to the left; the second number indicates the number of places by which to shift the 
+number. Numbers are treated as 32-bit integers; with each shift the most-significant bit (bit 31) 
+is lost, and a value of 0 shifts into the least-significant binary digit (bit 0). Example: 
+0b11110111000000001111000011001010 << 3 = 0b10111000000001111000011001010000.
+ The bitwise LSR (logical shift right) operator is >>> (yes, three > symbols not two). It operates
+on two numbers, shifting the first number to the right by the number of bits indicated by the 
+second number. Numbers are treated as 32-bit ints; with each shift the number loses its least significant bit (bit 0), and 0 shifts into the most-significant binary digit (bit 31). Example: 
+0b1111110000111000011001010 >>> 3 = 0b0001111110000111000011001.
+Important Note: JavaScript’s ASR (arithmetic shift right) operator >> is identical to >>> in every
+way except that when shifting right, the most-significant binary digit (bit 31) is used to fill in the
+new leftmost digits, instead of a zero being used. For our purposes, >>> is much more useful 
+than >>. Example: 0b1111110000111000011001010 >> 3 = 0b1111111110000111000011001.
+For the operations below, indicate the results in binary, hexadecimal and decimal notations:
+ Bitwise XOR
+0b010101 ^ 0b0110111 57 ^ 87 0b01101001 ^ 0b00011000
+0x0BADCACA ^ 0xD00DAD 0xCAFED00D ^ 0xDECAF 123 ^ 124
+ Bitwise LSL
+0b010101 << 7 57 << 8 0b01101001 << 0b00000111
+0xF00D << 0xA 0x000BABEE << 0b1 42 << 0xA
+ Bitwise LSR
+0b0101010101 >>> 7 157 >>> 3 0b10110100101010011 >>> 15
+0b00011000 >>> 2 0xDEADBEEF >>> 0xA 0xCAFEBABE >>> 0b11
+ Count in Binary
+Given integer representing the number of bits, recursively print strings that count, in binary 
+representation, from 0 up to the max number representable by that number of bits.

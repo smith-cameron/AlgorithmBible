@@ -1,0 +1,38 @@
+Binary System
+If “hex” numbers make sense to you, then good job – you are starting to think like a computer. If you
+really want to get geeky, you’ll need to understand binary as well. In binary, each additional digit is an 
+additional power of 2, so a number like 0b1111111 = (1 x 27
+) + (1 x 26
+) + (1 x 25
+) + (1 x 24
+) + (1 x 23
+) + 
+(1 x 22
+) + (1 x 21
+) + (1 x 20
+) = 255, or 0xFF. Each four bits of binary translate into a single hex digit, so 
+translation should be fast. 0x3 = 0b0011, 0x8 = 0b1000, 0xB = 0b1011, 0xE = 0x1110.
+ Decimal to Binary
+For practice, convert the following from decimal to binary. Example: 117 becomes 0b1110101. 
+13 6 25 8 45 10 -9 64 255 128 35 0 198
+ Binary to Decimal
+For practice, convert the following from binary to decimal. Example: 0b100111 becomes 39.
+0b10100101 0b111 0b1111000 0b110110 0b000 0b11
+ -0b1010 0b100110 0b1010101010 0b111001 0b100101
+ Decimal to Binary String
+Create a function dec2BinStr(value) that converts a number into a string representing that number 
+in binary notation. For this challenge, do not use the (very convenient) toString function. For 
+example, given the value 35, the function should return "0b100011".
+ Binary String to Value
+Create a function binStr2Val(str) that accepts a string representing an int in binary notation, and 
+returns the value. For this challenge, do not use the (very convenient) parseInt function. For 
+example, given the string "0b1010101", the function should return 85. 
+Ready for a bit of a break from bits? Here is a completely unrelated (difficult!) challenge, if you wish:
+ Reorder Word Fragments
+You are given an array of equal-length strings containing lowercase alphabetical characters or ‘?’.
+Reorder the words so that from word to word, each letter is in alphabetical order (first letters are in 
+order, second letters are in order, etc). The ‘?’ can represent any letter needed to satisfy this. Return 
+the array in this order, with ? converted into the alphabetically earliest possible letter. Return null if the 
+ordering is impossible. Given ["XD?E","BDE?","?A?E"], return ["AAAE","BDEE","XDEE"]. For 
+["BQX?","XD?E"], return NULL because first letters require a different order than second letters allow. 
+Second: Ensure you minimize every word. For ["S?","?Q"], return ["AQ","SQ"] not ["SA","SQ"]. 
