@@ -1,0 +1,55 @@
+ Rising Squares
+Ever since her dad discovered universal truths about triangles, Sophia Pythagoras has loved square 
+numbers. Given positive integer, successively print squares of integers up to that integer, first 
+ascending odds, then descending evens. Solve recursively with no loops. Ex.: risingSquare(5)
+returns "1, 9, 25, 16, 4", risingSquare(8) returns "1, 9, 25, 49, 64, 36, 16, 4". 
+ Binary String Expansion
+You are given a string containing chars ‘0’, ‘1’, and ‘?’. For every ‘?’, either ‘0’ or ‘1’ can be substituted. 
+Write a recursive function to return array of all valid strings with ‘?’ chars expanded to ‘0’ or ‘1’. 
+binStrExpand("1?0?") => ["1000","1001","1100","1101"]. If you use string functions such 
+as slice(), use them sparingly, as they are expensive.
+ String Anagrams
+Given a string, return array where each element is a string representing a different anagram (a different 
+sequence of the letters in that string). Example: if given "lim", return ["ilm", "iml", "lim", 
+"lmi", "mil", "mli"]. For this challenge, you can use built-in string functions such as split().
+ Climbing Stairs
+Speros walks the stairs at the Dojo multiple times every day. Often he takes 2 stairs at a time, to work
+his quadriceps; he’s just that way. Other days he mixes it up: with every footstep, he randomly chooses 
+to take 1 stair or 2. You are given an integer representing the total number of stairs. Determine all ways
+to walk the stairs. Given 4, return [[1,1,1,1], [1,1,2], [1,2,1], [2,1,1], [2,2]]. Solve 
+recursively with no loops. And don’t forget to get yourself some exercise during the bootcamp, as well. 
+Second: assuming you always start with a left foot, return only those ways that end with a right step. 
+So, given 4, you should return [[1,1,1,1], [2,2]]. 
+Third: instead of only returning those that end with a right step, only return those where the total
+number of steps climbed with left foot equal those climbed with right. So, given 4, you should return
+[[1,1,1,1], [1,2,1], [2,2]].
+
+ Sum of Squares
+Mike enjoys teaching the “lego concept” to beginning HTML/CSS students: breaking a web page into
+different rectangles. There is something about squares that appeals to his sense of balance. Given an
+integer, calculate and print all combinations of square integers that sum to that integer. No duplicates
+are allowed among smaller integers. sumOfSquares(10) => “1 + 9”. sumOfSquares(30) => “1 + 4 
++ 25, 1 + 4 + 9 + 16”. Solve recursively with no loops. 
+ All Valid N Pairs of Parens
+Given the number of pairs of parentheses, return an array of strings, where each string represents a 
+different valid way to order those parentheses. Example: given 2, return ["()()", "(())"]. 
+ Towers of Hanoi
+Create an algorithm to solve the Towers of Hanoi game. In the Towers of Hanoi, there are three poles
+and a stack of disks that fit onto the poles. The disks range from largest (on bottom) to smallest (on 
+top), currently all on pole A. Moving only one disk at a time, move the stack to pole C. You can use any
+of the three poles you wish. A larger disk can never be placed on top of a smaller disk. How many
+moves does it take to relocate six disks from pole A to pole C? What is the first move? 
+ IP Addresses
+Given string containing digits, add three decimal points to convert into a valid IP address, and return 
+that string. Each of the four quads in a "###.###.###.###" IP address is a number between 0 and 
+255. Given "255255255", you could return "2.55.255.255", or "25.5.255.255", or others. 
+Second: return an array of all possible valid IP address combinations, for the given string. 
+ Uneven Digits
+Cami doesn’t know why, but she’s just in an odd mood today. Let’s make all numerals odd for her. 
+Given an integer, recursively return the integer formed by stripping out all even digits in original. Solve 
+without loops. uneven(-1845) = -15; uneven(79) = 79; uneven(20) = 0; uneven(-92) = -9. 
+ Generate All Possible Coin Change
+Create generateAllCoinChange(cents). Given a number of American cents, compute and return 
+an array enumerating all possible ways to represent it, with pennies (1 cent), nickels (5 cents), dimes 
+(10 cents), quarters (25 cents). For 5, return [{dimes:0,nickels:1,pennies:0,quarters:0},
+{dimes:0,nickels:0,pennies:5,quarters:0}{}]. Do not return duplicate results.
