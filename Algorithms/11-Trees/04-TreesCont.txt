@@ -1,0 +1,73 @@
+function BTNode(value) {
+if (!(this instanceof BTNode))
+{ return new BTNode(value); }
+this.val = value;
+this.left = null;
+this.right = null;
+}
+function BST() {
+if (!(this instanceof BST))
+{ return new BST(); }
+this.root = null;
+}
+Answer: the additions to our BTNode and BST classes are instanceof checks, which make it so that 
+these objects can be created with the following code: 
+var myBrandNewBST = BST(); // no new needed
+var aNewNode = BTNode(42); // no new
+Fabulous. Now, back to work. Today, add these additional methods to our BST class implementation:
+ BST: Remove
+Remove a given val. Return false if not found. 
+ BST: Is Valid
+Construct an isValid() method on the BST
+object to determine whether tree has valid 
+structure. Specifically, ensure that all nodes and 
+values are located in the appropriate left or right 
+subtrees. This might be trickier than it seems at
+first glance. What are a few helpful “invalid tree” 
+test cases? 
+ BST: Remove All
+Clear all values from the tree. 
+ BST: Add Without Dupes
+Add a given value only if it is not already found. 
+Return true if added, false otherwise. Remember 
+our Set Theory: this changes our BST from an 
+ordered multiset to an ordered set.
+Second: What other methods need changing, if 
+we want our BST to be a true ‘set’? Build those. 
+ Traverse BST Reverse-Order
+Create bstReverseOrder(BST) that prints the BST’s values, traversed in reverse order
+ BST: Val Before
+Create a BST method that, given a value that 
+may or may not be in the tree, returns the value 
+that is most immediately smaller. Examples: for 
+tree {2,5,8}, valBefore(3) returns 2, and 
+valBefore(8) returns 5.
+ BTNode: Node Before
+Create a BTNode method that, given a node that
+is in the BST, returns a pointer to the node with 
+the most immediately smaller value. Examples: 
+for tree {2,5,8}, nodeBefore(node5) returns 
+the node containing 2; nodeBefore(node8)
+returns the node containing 5.
+ BST: Val After
+Write a method on the BST class that returns the 
+value immediately following the given one, even 
+if that given value is not contained in the tree. 
+Examples: for tree {2,5,8}, valAfter(3)
+returns 5; valAfter(8) returns null. 
+ BTNode: Node After
+Parallel to nodeBefore, write a BTNode method 
+that returns the node immediately following the 
+given node (which is guaranteed to be in the 
+tree). Examples: for tree {2,5,8}, calling 
+nodeAfter(node2) returns the node
+containing 5; nodeAfter(node8) returns null. 
+ BST: Closest Value
+Create BST method closestValue(val) to return the value contained in a BST that is closest to the
+given val. This could be the exact value (if tree contains it), or one that is greater or less than val. 
+Take care: there is no guarantee that closest value is direct parent, grandparent, child, grandchild, etc. 
+ Tree Path Contains Sum
+Given a binary tree (not necessarily a BST) containing numbers and a sum, can you determine whether 
+the tree has a root-to-leaf path that, if you add up those nodes values, equals sum? Return a boolean. 
+If a particular node has (for example) a left child but no right child, you can consider it a leaf.
+Second: instead of returning a boolean, return an array of all the root-to-leaf paths that equal sum.
