@@ -1,0 +1,37 @@
+ Trie MultiSet: Insert
+For this exercise, Insert increments count, 
+adds nodes as needed and always succeeds. 
+ Trie MultiSet: Size
+Size should return total (multi) count. 
+ Trie MultiSet: Remove
+Remove should decrement count and eliminate 
+nodes, returning previous count (0 if not found).
+ Trie MultiSet: Contains
+Contains should return count (0 if not found). 
+Note: First / Last / Next are unchanged when moving from Set to MultiSet.
+ Trie MultiSet: Auto Complete
+Given an entire dictionary and a short initial string fragment, autocomplete might return a huge number 
+of results. Let’s use the count aspect of each TrieMultiNode to denote the frequency of that word, 
+and use this to prioritize the return results from autoComplete, so that most frequent words are listed 
+first. In addition to the string fragment, accept maxResults, and return at most that many results.
+Trie Map
+We can expand a TrieSet to a trieMap by associating an additional value to each stored string. 
+ Trie Map: Insert
+Insert should accept a key and a value, and 
+should return the preexisting value (if key 
+already existed) or null if key is new.
+ Trie Map: Contains
+Contains should return the value for the given 
+key (null if key is not found). 
+ Trie Map: Remove
+Remove deletes the given key (and value),
+returning true if key was found, else false.
+ Trie Map: Size
+Size is unchanged from TrieSet. 
+ Trie Map: First
+First returns an object containing the keyvalue pair for the alphabetically-lowest key. 
+ Trie Map: Last
+Conversely, Last returns the final key-value. 
+ Trie Map: Next
+Given a key that may not be present, 
+next(key) returns the subsequent key-value. 
