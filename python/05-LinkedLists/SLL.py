@@ -53,7 +53,7 @@ class LinkedList():
     def maxValue(self):
         i = self.head
         x = i.value
-        while i.next != None:
+        while i != None:
             if i.value >= x:   
                 x = i.value
                 self.max = i
@@ -63,7 +63,7 @@ class LinkedList():
     def minValue(self):
         i = self.head
         x = i.value
-        while i.next != None:
+        while i != None:
             if i.value <= x:
                 x = i.value
                 self.min = i
@@ -116,8 +116,41 @@ class LinkedList():
         print (f"{value} added at Node #{self.size}")
         return self
     def min2Front(self):
+        i = self.head
+        x = None
+        while i != None:
+            if i.value == self.min.value and i != self.head:
+                print("remove min")
+                x.next = i.next
+                print("insert at head")
+                i.next = self.head
+                self.head = i
+                print("return self")
+                return self
+            x = i
+            i = i.next
         return self
     def max2Back(self):
+        i = self.head
+        x = None
+        while i != None:
+            if i.value == self.max.value:
+                print(f"At max: {i.value}")
+                print("remove max")
+                x.next = i.next
+                print("insert at tail")
+                j = i
+                while j.next != None:
+                    j = j.next
+                    # self.tail = i
+                print("At tail")
+                # Successfully located and detateched maximum value 
+                # j.next = i
+                # self.tail = j.next
+                # self.lastValue
+                return self
+            x = i
+            i = i.next
         return self
     def prependValueAt(self, value, target):
         newNode = Node(value)
@@ -156,7 +189,7 @@ class LinkedList():
         while x < len(input):
             self.addLast(input[x])
             x += 1
-        self.display()
+        self.lastValue().minValue().maxValue()
         return self
     def deleteValue(self, target):
         if self.head == None:
