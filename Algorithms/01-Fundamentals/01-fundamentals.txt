@@ -2,7 +2,7 @@
 Set myNumber to 42. Set myName to your name. Now swap myNumber into myName & vice versa.
 
 2) Print and Count
-Print all integer multiples of 5, from 512 to 4096. Afterward, also log how many there were.
+Print all integer multiples of 5, from 512 to 4096. Afterward, also print how many there were.
 
 3) Print -52 to 1066
 Print integers from -52 to 1066 using a FOR loop.
