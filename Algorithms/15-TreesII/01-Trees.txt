@@ -1,0 +1,11 @@
+ BST: Is Full
+Chekov keeps his data perfectly clean. I mean, per-fect-ly clean. He doesn’t just keep them balanced.
+He keeps a full BST at all times. Given a pointer to a BST object, return whether the BST is a full tree.
+ BST: Is Complete
+His cousin Pikov is a bit less neurotic. He does still keep everything highly balanced. He keeps his 
+BSTs complete at all times. Given a BST object, return whether that BST is complete.
+ BST Discussion
+What is the advantage of Chekov’s approach? What is the advantage of Pikov’s approach? What about
+their crazy uncle Dropov, who never balances his BSTs at all – is he being negligent? Maybe there isn’t
+a single ‘right’ answer. So how do we know what approach is best for the situation at hand?
+
