@@ -1,0 +1,14 @@
+ BST: Partition Around Value
+Create a method BST.partition(value) where a BST object partitions itself around the given value
+(whether or not that value is found in the tree). The BST should change itself appropriately, as well as
+return a new tree object containing all other nodes. Remember, the ranges of the two BST objects 
+should not overlap (the max() of one should be less than the min() of the other). 
+ BST: Partition Evenly
+Create a standalone function that, given a valid BST, partitions the tree evenly into two distinct BSTs. 
+As in the previous challenge, change the given BST to become one of the resultant BSTs, and return
+the other. The two resultant trees should be valid and non-overlapping.
+Second: if we don’t pay attention to balance, the two resultant BSTs might be tall and thin. To improve 
+performance, make both subtrees a bit more balanced before returning them. 
+ BST: Reverse
+Create a standalone function that accepts a BST object and reverses it. A reversed BST has its highest 
+values in leftmost children, and its lowest values in rightmost children (root would be unchanged).
