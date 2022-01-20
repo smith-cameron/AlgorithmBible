@@ -1,0 +1,10 @@
+ BST: Values for Layer
+Jeff has divided his workgroup into a perfectly balanced hierarchy, to the extent that his organizational 
+chart looks just like a binary tree! To learn how things are going “in the trenches”, he wants to have a
+meeting with all the line managers, but not include their bosses. Given a BST and a layer number
+(starting at zero for the root), return an array containing all the values at that layer in the BST. If a BST
+is a full tree, what percentage of nodes are leaves? What percentage are ‘first-level managers’?
+ BST: Layer Arrays
+Given a BST, return a two-dimensional array containing all values in the BST. The outer array
+represents each layer (starting at zero for the root), and the inner array for each layer represents the 
+values at that layer in the BST.
