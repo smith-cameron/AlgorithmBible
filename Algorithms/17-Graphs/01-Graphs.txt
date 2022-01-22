@@ -1,0 +1,19 @@
+You can think of vertices in the same way that you have thought of nodes in a linked list: each is 
+located in a particular place in the structure and has a value that can be set to … well … anything. As 
+mentioned before, we can’t just store the “head node”, because a graph’s vertices may not be 
+interconnected. We need to maintain a list of them. With this in mind, in addition to the graph 
+constructor function, we would expect a graph to have a this.vertList that contains our vertices,
+as well as the following functions to manage vertices: 
+ addVertex(val) // returns vertId
+ removeVertex(vertId)
+ getVertexValue(vertId)
+ setVertexValue(vertId, val)
+Furthermore, we’d expect to see the following functions, to manage edges: 
+ addEdge(vertId1, vertId2, val)
+ removeEdge(vertId1, vertId2)
+ getEdgeValue(vertId1, vertId2)
+ setEdgeValue(vertId1, vertId2, val)
+
+
+
+

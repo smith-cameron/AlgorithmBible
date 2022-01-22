@@ -1,0 +1,53 @@
+AVL Trees
+Remember that a binary search tree’s performance is linked to how balanced it is. If a tree is 
+unbalanced and deep, then there is a chance that the value we seek is down in the depths of the tree,
+far beyond the average expected height. But what if our BST could somehow keep itself balanced? 
+How would it do this, and how expensive would it be? Soviet mathematicians Georgy Adelson-Velsky 
+and Evgenii Landis responded to this problem by inventing the first self-balancing tree: named after
+their surname initials, we call it the AVL tree.
+The rules of an AVL tree are simple: for every node, the heights of its two child subtrees must differ by 
+at most one. If an insertion or removal changes the tree so that this rule is no longer valid (in other
+words, an insertion or removal makes the tree unbalanced), the tree must ‘rotate’ its shape to become 
+balanced again. To optimize the AVL tree for the fact that it will constantly check its balance at various 
+locations, each node contains (and maintains) a balance factor (1 if its left subtree is one node deeper
+than its right subtree, -2 if the right subtree is deeper by two, 0 if both sides are even, etc). For today,
+let’s just measure and detect these situations; tomorrow we will address them.
+function AVLTree() {
+var head = null;
+this.add = function(value) {}
+this.remove = function(value){}
+// Assume these exist and
+// correctly update node.balance
+this.height = function() {
+// ...write this code today
+}
+this.isBalanced = function(){
+// ...write this code today
+}
+}
+function AVLNode(value) {
+this.val = value;
+this.balance = 0;
+this.left = null;
+this.right = null;
+this.height = function() {
+// ...write this code today
+}
+this.isBalanced = function() {
+// ...write this code today
+}
+} 
+ AVL: Height
+Create height() methods for both the AVLTree and AVLNode classes.
+ AVL: Is Balanced
+Given an AVL tree whose nodes have up-to-date .balance values, create the isBalanced()
+methods for both AVLTree & AVLNode.
+
+ AVL: Remove
+Create remove(value) for the AVLTree class. 
+Update .balance for any affected nodes, but 
+don’t worry about rebalancing the tree.
+ AVL: Add
+Create add(value) for the AVLTree class. 
+Update .balance for any affected nodes, but 
+don’t worry about rebalancing the tree. 
