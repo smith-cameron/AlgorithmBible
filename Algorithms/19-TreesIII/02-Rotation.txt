@@ -1,0 +1,27 @@
+ AVL: Rotate Left
+Create rotateLeft(node) method in the
+AVLTree class. First counter-rotate the child if
+needed, and as always update.balance
+attributes appropriately and inexpensively.
+ AVL: Rotate Right
+Create a rotateRight(node) method for
+AVLTree. Counter-rotate the ‘tall child’ first, if
+needed, and keep all .balance attributes 
+appropriately and inexpensively up-to-date.
+ AVL: Balanced Add
+Using all you learned this chapter, create a 
+balancedAdd(value) method for AVLTree
+class. Ensure that by the time it returns, our 
+value is added, the tree is balanced, and all 
+node attributes are updated and accurate.
+ AVL: Balanced Remove
+Build balancedRemove(value) for our 
+AVLTree class. Ensure that when method 
+returns (true if removed, false if not found),
+the value is removed, tree is balanced, and all 
+node attributes are updated and accurate.
+ AVL: Rebalance
+Similar to repair() on regular BSTs, create rebalance() for AVLTrees. Just as repair() is not
+really needed (since we expect BSTs to insert and delete nodes correctly and never become invalid),
+similarly we could argue that rebalance() is unneeded since an AVLTree will continually keep itself
+balanced. Nonetheless, quickly build this, using other methods you’ve already created
