@@ -1,0 +1,26 @@
+Red-Black Trees
+A Red-Black Tree is based on our normal Binary Search Tree, plus these rules:
+1. A boolean within each node designates it as currently red or black. 
+2. The root node is black.
+3. The null underneath each leaf node is considered black.
+4. If a node is red, then both its children must be black. 
+5. Every path from node to descendent null contains the same number of black nodes. 
+The uniform number of black nodes in paths from root to leaves is the tree’s black-height.
+As with the AVLTree, search methods in an RBTree (such as contains) are identical to those of a 
+BST. The add and remove properties, however, are more interesting. To add a value to an RBTree, 
+we create an RBNode (these default to Red) and insert it at the appropriate place in the tree. If the RedBlack rules are not violated, we are done. Otherwise, we either “repaint” certain nodes or we rebalance 
+(and then repaint) certain nodes as necessary. 
+ RBTree and RBNode Class Definitions
+Create the simplest possible class definitions of 
+RBTree and RBNode. 
+ Red-Black Tree: Add
+Create the add(val) method on the RBTree
+class. As needed, repaint and/or rebalance; this 
+is a self-balancing method. 
+ Red-Black Tree: Contains
+Create a contains(value) method for 
+RBTree. Is this function interesting? 
+ Red-Black Tree: Remove
+Create the RBTree’s remove(val) method. As
+needed, repaint and/or rebalance nodes; this is a 
+self-balancing method.
