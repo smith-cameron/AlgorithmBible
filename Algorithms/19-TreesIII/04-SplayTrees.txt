@@ -1,0 +1,12 @@
+ Splay Tree Class Definitions
+Create the simplest possible SplayTree class 
+definition. Do you need a SplayNode? 
+ Splay Tree: Add
+Create the add(value) method on the
+SplayTree class, splaying the new node.
+ Splay Tree: Contains
+Create a contains(value) method for 
+SplayTree, splaying as needed.
+ Splay Tree: Remove
+Create a remove(value) method for 
+SplayTree, splaying as needed.

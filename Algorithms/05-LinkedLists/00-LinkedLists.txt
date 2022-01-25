@@ -40,16 +40,16 @@ Create a standalone function that locates the minimum value in a linked list, an
 5 - SList: Move Max to Back
 Create a standalone function that locates the maximum value in a linked list, and moves that node to the back of the list. Return the new list, with all nodes still present, and all in their original order except for the node you moved to the end of the singly linked list.
 
-1 - SList: Prepend Val
+1 - SList: Prepend Val X
 Create prependVal(ListNode,val,before) to insert a new ListNode with val immediately before the node containing before (or at end, if no node contains before). Return the new list.
 
-2 - SList: Append Val
+2 - SList: Append Val X
 Create appendVal(list,val,after) that inserts a new ListNode containing given val immediately after the node containing after (or at end, if after not found). Return the new list.
 
-3 - Create SList (prompt)
-Create an SList with values entered. Use the prompt function to gather values one at a time from the user, putting each into a ListNode that you add to the end of the list. When the user hits [Cancel], return the list you have created.
+3 - Create SList (prompt) X
+Create an SList with values entered putting each into a ListNode that you add to the end of the list. return the list you have created.
 
-4 - SList: Remove Val
+4 - SList: Remove Val X
 Create removeVal(ListNode,val). Given a pointer to the head ListNode, remove the node with the given val. Return the new list. What will you do if val is not found?
 
 Here is the humble-but-mighty ListNode class:
