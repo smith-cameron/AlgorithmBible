@@ -1,0 +1,16 @@
+ Closest Three-Sum (Series)
+Given an assorted array of numbers, plus a target number, return the three array elements whose 
+sum is closest to target. For example, given ([1,8,5,10,2,4,3],6), return [1,2,3]
+
+
+ Is Number Prime (Series)
+Given number, return whether it is prime. 
+Prime numbers are only evenly divisible
+by themselves and 1.
+Before moving on, quickly write a naïve 
+isNumberPrime, and then optimize it.
+ Counting Primes
+Build on the isNumberPrime(num) function at left to 
+count the primes that are equal or less than given integer. 
+Second: add the ability to profile this function, measuring 
+progress as we optimize isNumberPrime.
