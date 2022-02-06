@@ -171,3 +171,4 @@ function scaleTheArray(arr, num){
     return arr;
 }
 //console.log(scaleTheArray([1,2,3,4,5,6], 2));
+
