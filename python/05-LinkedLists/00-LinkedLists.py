@@ -9,4 +9,6 @@ thisList = LinkedList()
 
 # thisList.createList([2,"BOO",3,{"userId": 47, "isRobot": True},8,"String",43, False,5,'singleQuotes',98.3001,.09,54,3])
 
-thisList.createList([1,12,35,4,15])
+thisList.createList([1,12,35,4,-15]).display().max2Back().display()
+
+
