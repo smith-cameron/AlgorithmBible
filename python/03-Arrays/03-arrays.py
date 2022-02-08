@@ -4,6 +4,7 @@ import time
 import time
 #1 - Array: Remove Negatives ******
 def removeNegatives(input):
+    count = 0
     i =0
     size = len(input)
     while i < size:
@@ -32,12 +33,12 @@ def remove(input, idx):
     print(f"{runtime} seconds to run")
     return newList
 
-print(remove([1,2,3,4,5],3))
+# print(remove([1,2,3,4,5],3))
 # print(remove([1,2,3,4,5],-3))
 # print(remove([1,2,3,4,5],8))
 
 #print(removeNegatives([2,-1,0]))   #works 1
-#print(removeNegatives([2,-1,0,-3]))   #leaves -3
+# print(removeNegatives([2,-1,0,-3]))   #leaves -3
 #print(removeNegatives([2,0,4,-3]))  #works4
 # print(removeNegatives([2,-1,0,-4,-3])) #leaves the -4??
 # print(removeNegatives([2,-1,-4,0,-3])) #leaves the -4
