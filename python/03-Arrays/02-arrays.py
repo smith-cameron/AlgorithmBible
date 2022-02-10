@@ -28,8 +28,8 @@ def getShwifty(list, shift):
         print(f"Shift Left by: {shift*-1}")
         for i in range(shift*-1):
             temp = list[0]
-            # print(f"outerLoopTemp: {temp}")
-            # print(f"outerLoopList: {list}")
+            print(f"outerLoopTemp: {temp}")
+            print(f"outerLoopList: {list}")
             for i in range(0, len(list)-1, +1):
                 list[i] = list[i+1]
                 # print(f"innerLoopList: {list}")
