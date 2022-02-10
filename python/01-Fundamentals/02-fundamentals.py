@@ -73,10 +73,19 @@ algo7Array = [6,14,53,7,9,13]
 def fahrenheitToCelsius(dFarenheit):
     dCelsius = (dFarenheit - 32) / (9/5)
     return dCelsius
-print(fahrenheitToCelsius(109))
+# print(fahrenheitToCelsius(109))
 
 #9) Celsius to Fahrenheit
 def celsiusToFahrenheit(dCelsius):
     dFahrenheit = (9/5 * dCelsius) + 32
     return dFahrenheit
-print(celsiusToFahrenheit(77))
+# print(celsiusToFahrenheit(77))
+
+def example(input):
+    # print(input)
+    for i in range(len(input)):
+        # print(f"iterator{i}")
+        input[i] *= 2
+        # print(f"index value:{input[i]}")
+    return input
+print(example([1,2,3]))

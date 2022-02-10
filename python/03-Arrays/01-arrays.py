@@ -2,7 +2,7 @@
 def pushFront(input, num):
     output = [num] + input
     return output
-#print(pushFront([1,2,3,4],8))
+# print(pushFront([1,2,3,4],8))
 
 #2 - Array: Pop Front
 def popFront(input):
@@ -13,10 +13,11 @@ def popFront(input):
     len(input)-1
     print(input)
     return input
-print(popFront([1,2,3,4]))
+# print(popFront([1,2,3,4]))
 
 #3 - Array: Insert At
 def insert(input, idx, num):
+    print(input)
     output = [num] + input
     for i in range(output[idx]):
         temp = output[i]
@@ -48,10 +49,14 @@ def swapPairs(input):
 def removeDuplicates(input):
     newList = []
     for i in range(len(input)):
+        # print(input[i])
         if input[i] != input[i-1]:
+            print()
             newList.append(input[i])
+        else:
+            print(input[i])
     return newList
-# print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
+print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
 
 def remove(input, idx):
     size = len(input)
