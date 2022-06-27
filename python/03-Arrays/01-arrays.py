@@ -6,25 +6,36 @@ def pushFront(input, num):
 
 #2 - Array: Pop Front
 def popFront(input):
+    # print(input)
     for i in range(len(input)-1):
         temp = input[i]
         input[i] = input[i+1]
         input[i+1] = temp
-    len(input)-1
-    print(input)
+    # print(input)
+    input.pop()
     return input
 # print(popFront([1,2,3,4]))
 
 #3 - Array: Insert At
 def insert(input, idx, num):
-    print(input)
+    # print(input)
     output = [num] + input
+    print(output)
     for i in range(output[idx]):
         temp = output[i]
         output[i] = output[i+1]
         output[i+1] = temp
     return output
-#print(insert([1,2,3,4],2,5))
+# print(insert([1,2,3,4],2,5))
+
+#3 - Array: Insert At (working in place) *NOT FINISHED*
+def insert(input, idx, num):
+    print(input)
+    for i in range(idx, len(input)):
+        print("idx: ",i)
+        print("value: ",input[i])
+    return input
+print(insert([1,2,3,4],2,5))
 
 #4 - Array: Remove At
 def remove(input, idx):
@@ -56,7 +67,7 @@ def removeDuplicates(input):
         else:
             print(input[i])
     return newList
-print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
+# print(removeDuplicates([1,1,2,2,3,4,4,5,6,7,7,8,9,9]))
 
 def remove(input, idx):
     size = len(input)
